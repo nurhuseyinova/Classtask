@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  border: 1px solid;
+  background-color: black;
+  padding: 10px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav ul li {
+  padding: 5px 20px;
+  color: white;
+  border-radius: 5px;
+}
+header nav ul li a {
+  color: white;
+}
+header nav ul li:hover {
+  color: black;
+  background-color: white;
+}
+header nav ul li:hover a {
+  background-color: black;
+}
+
+footer {
+  height: 40vh;
+  margin-top: 10px;
+  background-color: rgb(172, 243, 243);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 150px;
+}
+footer nav ul li {
+  line-height: 5vh;
+  font-size: 20px;
+}
+footer nav ul li a {
+  color: gray;
+}
+
+.sec1 {
+  margin-top: 10px;
+  border: 2px solid black;
+  height: 100vh;
+}
+.sec1 .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.sec1 .container .box {
+  height: 150px;
+  width: 150px;
+  border: 2px dotted;
+  background-color: yellow;
+  transition: 2s;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec1 .container .box:hover {
+  transform: rotatex(360deg);
+  background-color: white;
+}
+.sec1 .container .box:hover h4 {
+  display: none;
+}
+.sec1 .container .box:first-child:hover {
+  background-image: url(./mini3.png);
+}
+.sec1 .container .box:nth-child(2):hover {
+  background-image: url("./minyon2.png");
+}
+.sec1 .container .box:nth-child(3):hover {
+  background-image: url("./mini3.png");
+}/*# sourceMappingURL=main.css.map */
