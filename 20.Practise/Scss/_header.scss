@@ -1,0 +1,36 @@
+header {
+  background-image: url("../image/headerimg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  .container {
+    height: 15%;
+    background-color: $bg-white;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    nav {
+      padding: 10px 0;
+     
+      ul {
+        @include display;
+        li {
+          font-size: 20px;
+          img {
+            height: 50px;
+          }
+          a {
+            color: $color-dark;
+            &:hover::after {
+              content: "";
+              display: block;
+              height: 2px;
+              width: 100%;
+              background-color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

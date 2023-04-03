@@ -1,0 +1,13 @@
+.sec2{height: 100vh;
+    background-color: $bg-white;
+   
+    .item{
+        height: 70%;
+        background-image: url("../image/smile.jpg");
+        background-position: center;
+        background-size: cover;
+        h2{
+            color: $bg-white;
+        }
+    }
+}
