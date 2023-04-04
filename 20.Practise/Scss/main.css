@@ -70,4 +70,56 @@ header .container nav ul li a:hover::after {
 }
 .sec2 .item h2 {
   color: rgb(235, 241, 253);
+}
+
+.item {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.row .box {
+  color: white;
+  border: 1px dashed black;
+  padding: 60px 10px;
+}
+.row .box:nth-child(odd) {
+  background-color: blueviolet;
+}
+.row .box:nth-child(even) {
+  background-color: rgb(7, 54, 7);
+}
+.row .box:hover {
+  animation: identifier 1s linear;
+  background-position: center;
+  background-size: cover;
+}
+.row .box:hover h4 {
+  display: none;
+}
+.row .box:hover:nth-child(odd) {
+  background-image: url("../image/minishoked.jpg");
+}
+.row .box:hover:nth-child(even) {
+  background-image: url("../image/miniangry.jpg");
+}
+
+@keyframes identifier {
+  0% {
+    transform: rotatex(0deg);
+  }
+  50% {
+    transform: rotatex(90deg);
+  }
+  100% {
+    transform: rotatex(0deg);
+  }
+}
+.sec4 {
+  border: 1px solid black;
+  padding: 200px 100px;
+}
+.sec4 .row .hero {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

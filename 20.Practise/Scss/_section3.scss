@@ -1,0 +1,36 @@
+.item {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.row {
+  .box {
+    color: white;
+    border: 1px dashed black;
+   padding: 60px 10px;
+    &:nth-child(odd) {
+      background-color: blueviolet;
+    }
+    &:nth-child(even) {
+      background-color: rgb(7, 54, 7);
+    }
+   
+    &:hover{
+        h4{display: none;}
+        animation: identifier 1s linear;
+        background-position: center;
+        background-size: cover;
+
+        &:nth-child(odd){background-image: url("../image/minishoked.jpg");}
+        &:nth-child(even){background-image: url("../image/miniangry.jpg");}
+       
+       
+    }
+  }
+}
+@keyframes identifier {
+    0%{transform: rotatex(0deg);} 
+    50%{transform: rotatex(90deg);}
+    100%{transform: rotatex(0deg);}
+    
+}
