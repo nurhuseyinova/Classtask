@@ -74,6 +74,14 @@ header .container nav ul li a:hover::after {
   text-align: center;
   display: flex;
   justify-content: center;
+  padding: 40px 0;
+}
+.item h1:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fcba00;
 }
 
 .row .box {
