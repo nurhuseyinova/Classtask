@@ -4,23 +4,27 @@ header {
   padding: 10px;
 
   nav {
+    padding: 15px;
     ul {
       display: flex;
       align-items: center;
       justify-content: space-around;
 
       li {
-        padding: 5px 20px;
-        color: white;
-        border-radius: 5px;
-        a{
-            color: white;
-        }
+        
+        padding: 10px 20px;
+       
+         border-radius: 5px;
+          color: white;
+            transition: 2s;
+        
 
-        &:hover {
+        &:hover a{
           color: black;
           background-color: white;
-          a{background-color: black;}
+          transform: scale(1.2);
+
+          
         }
       }
     }
