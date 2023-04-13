@@ -31,17 +31,17 @@ for(let i=0; i<arr2.length; i++){
     }
 }
 
-//4?
-// const newText2=0
-// let text1='How is it going?'
-// for(let i=0; i<text1.length; i++){
-//     if(text1[i]=="i") continue;
-//     else{
+//4
+let newText2=''
+let text1='How is it going?'
+for(let i=0; i<text1.length; i++){
+    if(text1[i]=="i") continue;
+    else{
 
-//         newText2+=text1[i];
-//     }
-// }
-// console.log(newText2);
+        newText2+=text1[i];
+    }
+}
+console.log(newText2);
 
 //5
 const numbersArr=[2, false, '5', 'true', 9, 0, '1']
