@@ -1,3 +1,4 @@
+
 //1
 let myText='An Array is a collection of items of same data type stored at contiguous memory location.'
 let sum=0
@@ -72,6 +73,4 @@ for(let key in myObj){
     }
 }
 console.log(myObj);
-
-    
 
