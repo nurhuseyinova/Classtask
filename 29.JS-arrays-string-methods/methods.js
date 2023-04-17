@@ -62,5 +62,10 @@
 // const arr4 = [8, 44, 14, 2, 23, 1, 22, 34, 9, 0, 6];
 // console.log(arr4.sort((a,b)=>a-b));
 
+
+////5+
+// const arr5 = [5, [8], [9, ['hi', ["don't touch me"], [0]], '9']]
+// console.log(arr5.flat(Infinity));
+
     
  
