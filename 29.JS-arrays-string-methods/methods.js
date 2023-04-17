@@ -25,7 +25,8 @@
 // console.log(result2.indexOf('r',5));
 
 ////6
-
+// let vowels = ['a', 'i', 'o', 'u', 'e']
+// let newArr2=
 
 
 
@@ -67,5 +68,9 @@
 // const arr5 = [5, [8], [9, ['hi', ["don't touch me"], [0]], '9']]
 // console.log(arr5.flat(Infinity));
 
+/////6+
+// const colors = ['green', 'blue', 'yellow', 'black', 'red', 'brown', 'white', 'gray', 'violet', 'pink']
+// let result3=colors.sort((a,b)=>a.length-b.length);
+// console.log(result3);
     
  
