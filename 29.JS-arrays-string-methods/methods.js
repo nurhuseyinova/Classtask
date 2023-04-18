@@ -25,12 +25,12 @@
 // console.log(result2.indexOf('r',5));
 
 ////6+
-let text = 'We are MERN-Stack developers';
-let vowels = ['a', 'i', 'o', 'u', 'e'];
-let result=text.toLowerCase().split('');
-// let newArr2=result.filter((el)=>result.includes(el)===vowels.includes(el)? el :null);
-let newArr2=result.filter((el,i,arr)=>vowels.includes(el) && arr.indexOf(el)===i);
-console.log(newArr2);
+// let text = 'We are MERN-Stack developers';
+// let vowels = ['a', 'i', 'o', 'u', 'e'];
+// let result=text.toLowerCase().split('');
+// // let newArr2=result.filter((el)=>result.includes(el)===vowels.includes(el)? el :null);
+// let newArr2=result.filter((el,i,arr)=>vowels.includes(el) && arr.indexOf(el)===i);
+// console.log(newArr2);
 
 
 
