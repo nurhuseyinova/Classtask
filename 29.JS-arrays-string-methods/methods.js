@@ -25,8 +25,11 @@
 // console.log(result2.indexOf('r',5));
 
 ////6
-// let vowels = ['a', 'i', 'o', 'u', 'e']
-// let newArr2=
+// let text = 'We are MERN-Stack developers';
+// let vowels = ['a', 'i', 'o', 'u', 'e'];
+// let result=text.toLowerCase().split('');
+// let newArr2=result.filter((el)=>result.includes(el)===vowels.includes(el)? el :null);
+// console.log(newArr2);
 
 
 
@@ -38,8 +41,8 @@
 //         },
     
 //         {
-//             region: 'Nizami',
-//             area: 20,
+//           region: 'Nizami',
+//           area: 20,
 //         },
     
 //         {
@@ -57,8 +60,11 @@
 //         },
     
 //     ]
-//     console.log( arr3.reduce((acc, curr)=>curr.region.length==6 ? acc+curr.area:acc,0));
-
+//     let calcArea=()=>{
+//     return ( arr3.reduce((acc, curr)=>curr.region.length==6 ? acc+curr.area:acc,0));
+//     }
+//     console.log(calcArea());
+    
 /////4+
 // const arr4 = [8, 44, 14, 2, 23, 1, 22, 34, 9, 0, 6];
 // console.log(arr4.sort((a,b)=>a-b));
@@ -70,7 +76,9 @@
 
 /////6+
 // const colors = ['green', 'blue', 'yellow', 'black', 'red', 'brown', 'white', 'gray', 'violet', 'pink']
-// let result3=colors.sort((a,b)=>a.length-b.length);
-// console.log(result3);
-    
+// let result3=colors.sort();
+// let result4=result3.sort(((a,b)=>a.length-b.length));
+// console.log(result4);
+
+
  
