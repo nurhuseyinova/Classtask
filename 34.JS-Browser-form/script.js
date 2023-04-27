@@ -101,6 +101,8 @@ startElement.addEventListener("click", function(){
             spanElement.style.color="red"
             spanElement.style.border="1px solid red"
             spanElement.style.width="90px"
+            startElement.removeAttribute("disabled","")
+            submitElement.setAttribute("disabled","")
          
             
         }
