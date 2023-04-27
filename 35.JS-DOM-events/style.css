@@ -1,0 +1,15 @@
+form {
+  height: 90vh;
+  border: 2px dashed darkgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+form #checkbox {
+  accent-color: blue;
+}
+form .radio {
+  accent-color: blue;
+}/*# sourceMappingURL=style.css.map */
