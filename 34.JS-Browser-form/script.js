@@ -53,6 +53,7 @@ radio2Element.style.accentColor="green"
 
 spanElement.style.border="1px solid black"
 spanElement.style.padding="5px"
+spanElement.style.width="40px"
 
 
 
@@ -99,6 +100,7 @@ startElement.addEventListener("click", function(){
             spanElement.innerHTML=`You missed):`
             spanElement.style.color="red"
             spanElement.style.border="1px solid red"
+            spanElement.style.width="90px"
          
             
         }
