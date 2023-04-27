@@ -12,4 +12,7 @@ form #checkbox {
 }
 form .radio {
   accent-color: blue;
+}
+form #checked {
+  visibility: hidden;
 }/*# sourceMappingURL=style.css.map */

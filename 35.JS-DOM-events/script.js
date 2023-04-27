@@ -44,14 +44,23 @@ inputEmail.addEventListener("mouseout",function(){
     
     
 })
-// inputPassword.addEventListener("click",function(event){
-//     event.target.value="3jne3wiiw"
+// inputPassword.addEventListener("click",function(){
+//     this.value="3jne3wiiw"
     
     
 // })
-checked.setAttribute("hidden","")
+
 checkbox.addEventListener("click",function(){
-    this.removeAttribute("hidden","");
+    if(checkbox.checked){
+        checked.style.visibility="visible"
+
+    }
+    else{
+        checked.style.visibility="hidden"
+
+    }
+
+    
 
 
 })
