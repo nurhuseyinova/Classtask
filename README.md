@@ -7,5 +7,6 @@
 20.Practise-https://willowy-granita-f2e09c.netlify.app <br>
 34.JS-Browser-form-https://fantastic-daffodil-785c9f.netlify.app <br>
 35.JS-DOM-events-https://jocular-baklava-3c2196.netlify.app <br>
+36.JS-Table-https://stalwart-mermaid-107aa3.netlify.app <br>
 
 
