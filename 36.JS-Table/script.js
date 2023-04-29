@@ -700,6 +700,7 @@ const data = [
     gender: "Male",
   },
 ];
+const cloneData = structuredClone(data);
 
 let searchEl = document.querySelector("#search");
 let tbody = document.querySelector("#tbody");
@@ -711,6 +712,7 @@ let UpName = document.querySelector(".arrowUpName");
 let DownName = document.querySelector(".arrowDownName");
 
 function myFun(array) {
+  tbody.innerHTML = "";
   array.forEach((element) => {
     let trEl = document.createElement("tr");
 
@@ -726,46 +728,70 @@ function myFun(array) {
 }
 myFun(data);
 searchEl.addEventListener("input", function (event) {
-  let search = data.filter(el => el.first_name
-	.toLocaleLowerCase()
-	.includes(event.target.value.toLocaleLowerCase())||
-  el.last_name
-  .toLocaleLowerCase()
-  .includes(event.target.value.toLocaleLowerCase())
+  let search = data.filter(
+    (el) =>
+      el.first_name
+        .toLocaleLowerCase()
+        .includes(event.target.value.toLocaleLowerCase()) ||
+      el.last_name
+        .toLocaleLowerCase()
+        .includes(event.target.value.toLocaleLowerCase())
   );
 
-  
   myFun(search);
   console.log(search);
 });
 
-// thId.addEventListener("click",function(){
-// 	let sortId=data.sort((a,b)=>b.id-a.id);
-// 	myFun(sortId);
-// })
-// let bool = false;
+let bolean = false;
+thId.addEventListener("click", function () {
+  bolean = !bolean;
+  let sortedId;
+  if (bolean) {
+    sortedId = data.sort((a, b) => b.id - a.id);
 
-// thId.addEventListener("click", function () {
-//   bool = !bool;
-
-//   let sortedUsers;
-//   if (bool) {
-//     sortedUsers = users.sort((a, b) => a.id - b.id);
+    DownId.style.display = "inline";
+    UpId.style.display = "none";
+    DownId.style.color = "red";
+    thId.style.color = "red";
+    DownName.style.display = "none";
+    UpName.style.display = "none";
+    thName.style.color = "black";
+  } else {
+    sortedId = data.sort((a, b) => a.id - b.id);
+    UpId.style.display = "inline";
+    DownId.style.display = "none";
+    UpId.style.color = "green";
+    thId.style.color = "green";
+    DownName.style.display = "none";
+    UpName.style.display = "none";
+    thName.style.color = "black";
+  }
+  myFun(sortedId);
+});
+let boleanName = false;
+thName.addEventListener("click", function () {
+  boleanName = !boleanName;
+  let sortedName;
+  if (boleanName) {
+    sortedName = data.sort((a, b) => b.first_name.localeCompare(a.first_name));
+    DownName.style.display = "inline";
+    UpName.style.display = "none";
+    UpName.style.color = "red";
+    thName.style.color = "red";
+    UpId.style.display = "none";
+    DownId.style.display = "none";
+    thId.style.color = "black";
+  }
+   else {
+    sortedName = data.sort((a, b) => a.first_name.localeCompare(b.first_name));
+    UpName.style.display = "inline";
+    DownName.style.display = "none";
+    UpName.style.color = "green";
+    thName.style.color = "green";
+    UpId.style.display = "none";
+    DownId.style.display = "none";
+    thId.style.color = "black";
+  }
   
-//   } else {
-//     sortedUsers = users.sort((a, b) => b.id - a.id);
-    
-//   }
-
-//   drawTable(sortedUsers);
-// });
-
-
-
-
-
-
-
-
-
-
+  myFun(sortedName);
+});
