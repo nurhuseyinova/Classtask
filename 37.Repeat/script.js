@@ -95,56 +95,88 @@ const arr=['6',8,NaN,"0",5,4,'true',false,7,'a',undefined,8,true]
 //     console.log(sortArr(arrNum));
 
 //7 dec  
-const arrNum=[3,1,22,0,12,11,9,8,10,14,41,55,51]
-let sortArr=(numbers)=>{
+// const arrNum=[3,1,22,0,12,11,9,8,10,14,41,55,51]
+// let sortArr=(numbers)=>{
 
-for (let i = 0; i < numbers.length - 1; i++)
-    {
-      for(let j = 0; j < numbers.length - 1; j++)
-      {
-        if(numbers[i] < numbers[j + 1] && i < (j + 1)) //NOTE: additional condition for indices
-        {
-         let tempVar = numbers [j + 1];
-          numbers [j + 1]= numbers [i];
-          numbers [i] = tempVar;
-        }
-      }
-    }
-  return arrNum
-}
-    console.log(sortArr(arrNum));
+// for (let i = 0; i < numbers.length - 1; i++)
+//     {
+//       for(let j = 0; j < numbers.length - 1; j++)
+//       {
+//         if(numbers[i] < numbers[j + 1] && i < (j + 1)) //NOTE: additional condition for indices
+//         {
+//          let tempVar = numbers [j + 1];
+//           numbers [j + 1]= numbers [i];
+//           numbers [i] = tempVar;
+//         }
+//       }
+//     }
+//   return arrNum
+// }
+//     console.log(sortArr(arrNum));
 
 
 
-//8
-//     for(int i = 0; i < nums.length - 1; ++i){
-//         for(int j = i + 1; j < nums.length; ++j){
-//             if(nums[i]>nums[j]){
-//                 int tempVar = nums[i];
-//                 nums[i] = nums[j];
-//                 nums[j] = tempVar;
+//8?
+//  const arrLetters = ['g', 'd', 'a', 'c', 'j', 'b', 'e']
+//  let sortArr=(newArr)=>{
+
+//         for (let i = 0; i < newArr.length-1; i++){
+//             for (let j = i+1; j < newArr.length; j++){
+//                 if(newArr[i].compareTo(newArr[j])>0){
+//                     let temp=newArr[i];
+//                     newArr[i]=newArr[j];
+//                     newArr[j]=temp;
+    
+//                 }
 //             }
 //         }
+//         return Array.toString(newArr)
+       
 //     }
-    
-//     return nums;
+
+// console.log(sortArr(arrLetters));  //['a', 'b', 'c', 'd', 'e', 'g', 'j']
+
+
+//8++
+//  const arrLetters = ['g', 'd', 'a', 'c', 'j', 'b', 'e']-
+// function sortArr(str) {
+//     let i = 0, j;
+//     while (i < str.length) {
+//         j = i + 1;
+//         while (j < str.length) {
+//             if (str[j] < str[i]) {
+//                 var temp = str[i];
+//                 str[i] = str[j];
+//                 str[j] = temp;
+//             }
+//             j++;
+//         }
+//         i++;
+//     }
+//     return str;
 // }
 
 
+// console.log(sortArr(arrLetters));  //['a', 'b', 'c', 'd', 'e', 'g', 'j']
 
 
-    // for (int i = 0; i < numbers.length - 1; i++)
-    // {
-    //   for(int j = 0; j < numbers.length - 1; j++)
-    //   {
-    //     if(numbers[i] < numbers[j + 1] && i < (j + 1)) //NOTE: additional condition for indices
-    //     {
-    //       tempVar = numbers [j + 1];
-    //       numbers [j + 1]= numbers [i];
-    //       numbers [i] = tempVar;
-    //     }
-    //   }
-    // } 
 
+//9+
+// let calculator=(num1,operator,num2)=>{
+//     let operations={
+//     "+":()=>num1+num2,
+//     "-":()=>num1-num2,
+//     "*":()=>num1*num2,
+//     "/":()=>num2 ?num1/num2 :"Can't divide by 0!",
+//     }
+//     return operations[operator]()     
+
+// }
+// console.log(calculator(2, "+", 2));  // 4
+// console.log(calculator(2, "*", 2));  // 4
+// console.log(calculator(4, "/", 2));  // 2
+// console.log(calculator(2, "/", 0));
+// console.log(calculator(2, "-", 10));
+// console.log(calculator(2, "/", 7));
 
 
