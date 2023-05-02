@@ -1,5 +1,5 @@
-# Classtask
-$\color{green}{Classtask}$ <br>
+# $\color{green}{Classtasks}$ 
+
 $\color{red}{16.Transform}$-https://incandescent-sherbet-4707d0.netlify.app <br>
 $\color{red}{17.Page}$-https://starlit-jelly-01e4fa.netlify.app <br>
 $\color{red}{18.Practise}$-https://gleaming-crisp-6014a6.netlify.app <br>
