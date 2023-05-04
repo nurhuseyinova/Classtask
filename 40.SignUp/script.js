@@ -9,14 +9,17 @@ let data = JSON.parse(localStorage.getItem("data")) || [];
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   let obj = {
+    id: Date.now(),
     name: userName.value,
     email: emailEl.value,
     password: passwordEl.value,
+    check: check.checked,
   };
-
-  data.push(obj);
-  localStorage.setItem("data", JSON.stringify(data));
- 
+  if (obj.name && obj.email) {
+    data.push(obj);
+    localStorage.setItem("data", JSON.stringify(data));
+  }
+  window.location.href = "data.html";
 });
 
 function disabledEl() {
