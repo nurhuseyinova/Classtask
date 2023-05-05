@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+         
+     margin: 0;
+     padding: 0;
+     font-family: "Segoe UI";
+     box-sizing: border-box;
+   }
+   table {
+     max-width: 900px;
+     width: 100%;
+
+     margin: 1px auto;
+
+     border-collapse: collapse;
+   }
+   table td,
+   table th {
+     border: 1px solid #ddd;
+     padding: 15px 10px;
+     text-align: center;
+   }
+   thead th{
+     background-color: rgb(77, 160, 132);
+
+   }
+  tbody td{
+     background-color: rgb(219, 235, 204);
+
+   }
+   button{
+     background-color: red;
+     padding: 7px;
+     border-radius: 5px;
+   }
+   
+ </style>
+</head>
+<body>
+  
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th id="id">ID</th>
+                    <th id="companyname">Company Name</th>
+                    <th id="city">City</th>
+                    <th id="country">Country</th>
+                    <th id="phone">Phone</th>
+                    <th id="button"></th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+    <script  src="./script.js"></script>
+</body>
+</html>
