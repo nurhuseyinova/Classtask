@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "country": "Azerbaycan",
+      "city": "Baku"
+    },
+    {
+      "id": "3",
+      "country": "Avstraliya",
+      "city": "Admin"
+    },
+    {
+      "id": "4",
+      "country": "England",
+      "city": "London"
+    },
+    {
+      "id": "5",
+      "country": "Rusiya",
+      "city": "Moskova"
+    }
+  ]
+}
