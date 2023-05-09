@@ -2,13 +2,13 @@
   "users": [
     {
       "id": "2",
-      "country": "Azerbaycan",
-      "city": "Baku"
+      "country": "Amerika",
+      "city": "New"
     },
     {
       "id": "3",
       "country": "Avstraliya",
-      "city": "Admin"
+      "city": "Nuu"
     },
     {
       "id": "4",
@@ -17,8 +17,8 @@
     },
     {
       "id": "5",
-      "country": "Rusiya",
-      "city": "Moskova"
+      "country": "Az",
+      "city": "Baku"
     }
   ]
 }
