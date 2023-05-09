@@ -1,0 +1,1 @@
+// export let API=`https://northwind.vercel.app/api/suppliers`
