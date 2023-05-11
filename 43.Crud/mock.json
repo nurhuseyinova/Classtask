@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "firstName": "Nurlana",
+      "lastName": "Huseyinova",
+      "email": "Nur@123",
+      "id": 1
+    },
+    {
+      "firstName": "Murad",
+      "lastName": "Muradli",
+      "email": "murad@12",
+      "id": 2
+    },
+    {
+      "firstName": "Ulfat",
+      "lastName": "Zakirli",
+      "email": "ulfat@zakir",
+      "id": 3
+    },
+    {
+      "firstName": "Kanan",
+      "lastName": "Amirov",
+      "email": "kanan@amir",
+      "id": 4
+    },
+    {
+      "firstName": "Leyla",
+      "lastName": "Aliyeva",
+      "email": "leyla@2002",
+      "id": 5
+    },
+    {
+      "firstName": "Ibrahim",
+      "lastName": "Huseyinov",
+      "email": "ibrahim@2006",
+      "id": 6
+    }
+  ]
+}
