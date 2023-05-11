@@ -4,12 +4,13 @@ let form = document.querySelector("#userForm");
 let firsName = document.querySelector("#firsName");
 let lastName = document.querySelector("#lastName");
 let emailInput = document.querySelector("#email");
+let numberInput = document.querySelector("#number");
 let submitBtn = document.querySelector("#submit");
 let search = document.querySelector("#searchInput");
 let firstNameClick = document.querySelector("#thFirstName");
 let arrowUp = document.querySelector(".fa-arrow-up");
 let arrowDown = document.querySelector(".fa-arrow-down");
-
+let alertBtn = document.querySelector("#notification");
 
 let editId = null;
 let arr = [];
@@ -22,16 +23,18 @@ async function getData() {
   let res = await axios(API_URL);
   let data = await res.data;
   arr = data;
-  copyData = data;
+  copyData = search.value ? copyData : data;
 
-  arr.forEach((el) => {
+  copyData.forEach((el) => {
     tbody.innerHTML += `
     <tr>
     <td>${el.firstName}</td>
     <td>${el.lastName}</td>
     <td>${el.email}</td>
-    <td><a href="" id="${el.id} "onclick=editBtn("${el.id}") class="btn btn-success">Edit</a>
-    <a href="" id="${el.id}" onclick=deleteBtn("${el.id}") class="btn btn-danger">Delete</a></td>
+    <td>${el.number}</td>
+    <td><a href="#" id="${el.id} "onclick=editBtn("${el.id}") class="btn btn-success">Edit</a>
+    <a href="" id="${el.id}" onclick=deleteBtn("${el.id}") class="btn btn-danger">Delete</a>
+    <a href="" id="${el.id}" onclick=detailBtn("${el.id}") class="btn btn-primary">Detail</a></td>
    
     </tr>
     `;
@@ -48,72 +51,72 @@ function deleteBtn(id, btn) {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  if (!editStatus) {
-    let obj = {
-      firstName: firsName.value,
-      lastName: lastName.value,
-      email: emailInput.value,
-    };
-    axios.post(`${API_URL}`, obj);
-  } else {
-    let obj = {
-      firstName: firsName.value,
-      lastName: lastName.value,
-      email: emailInput.value,
-    };
-    axios.patch(`${API_URL}/${id}`, obj);
-    editStatus = false;
+  let obj = {
+    firstName: firsName.value,
+    lastName: lastName.value,
+    email: emailInput.value,
+    number: numberInput.value
+    // .splice(0,numberInput.value.length-4,"*")
   }
+  if(firsName.value&&lastName.value&&emailInput.value&&numberInput.value){
+
+  if (!editStatus) {
+    axios.post(`${API_URL}`, obj);
+
+
+  } else {
+    axios.patch(`${API_URL}/${editId}`, obj);
+    editStatus = false;
+
+  }}
 });
 
-// function editBtn(id) {
-//   editId = id;
-//   editStatus = true;
-//   let edit = copyData.filter((el) => el.id == editId);
-//   edit.forEach((item) => {
-//     firsName.value = item.firsName
-//       lastName.value = item.lastName
-//       emailInput.value = item.email
-//   });
+function editBtn(id) {
+  editId = id;
+  editStatus = true;
+  let edit = arr.filter((el) => el.id == editId);
 
-  // getData()
-  // console.log(editId);
-  // submitBtn.value="Edit"
-// }
+  edit.forEach((item) => {
+    firsName.value = item.firstName;
+    lastName.value = item.lastName;
+    emailInput.value = item.email;
+  });
 
-/////////////?
-// search.addEventListener("input", function (event) {
-//   axios(API_URL).then((res) => {
-//   let filtered=arr
-// filtered.filter((item) =>{
-//     `${item.firstName},${item.lastName}`.toLocaleLowerCase().includes(
-//       event.target.value.toLocaleLowerCase()
-//     );
-//   });
-//   getData(filtered)
-//   console.log(filtered);
-// })
-// });
+  submitBtn.innerText="Edit"
+}
 
 
-arrowUp.style.display="none"
-arrowDown.style.display="none"
-// let asc="asc"
+
+
+
+search.addEventListener("input",function(e){
+  copyData=arr
+  copyData=copyData.filter((item=>item.firstName.toLowerCase().includes(search.value.toLowerCase())))
+  getData()
+})
+
+
+arrowUp.style.display = "none";
+arrowDown.style.display = "none";
+// let asc=true
 // firstNameClick.addEventListener("click",function(){
-//   let sortedName;
+//   // let sortedName;
 //   asc=!asc
-//   if(asc){
-//     sortedName=copyData.sort((a,b)=>b.firsName.localeCompare(a.firsName))
-//   arrowUp.style.display="none"
-//   arrowDown.style.display="inline"
-  
+//   if(!asc){
+//     // copyData=arr
+//     // copyData.sort((a,b)=>b.firsName.localeCompare(a.firsName))
+//   //   console.log(copyData);
+//   // arrowUp.style.display="none"
+//   // arrowDown.style.display="inline"
+//   // getData()
+
 //   }
 
-//   else{
-//     sortedName=copyData.sort((a,b)=>a.firsName.localeCompare(b.firsName))
-//     arrowUp.style.display="inline"
-//   arrowDown.style.display="none"
-//   }
-//   getData(sortedName)
+//   // else{
+//   //   copyData.sort((a,b)=>a.firsName.localeCompare(b.firsName))
+//   //   arrowUp.style.display="inline"
+//   // arrowDown.style.display="none"
+//   // // getData()
+//   // }
 
 // })
