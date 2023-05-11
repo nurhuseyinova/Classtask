@@ -1,0 +1,50 @@
+header {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    h1 {
+      color: darkred;
+    }
+    ul {
+      display: flex;
+
+      gap: 20px;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  form {
+
+   
+    h3 {
+      color: darkred;
+      text-align: center;
+    }
+    input{
+        width: 250px;
+        padding: 5px 0;
+    }
+    select{
+        width: 250px;
+        padding: 5px 0;
+    }
+    button{
+        background-color: darkred;
+        border-radius: 10px;
+        color: white;
+        padding: 8px ;
+    }
+  }
+}
