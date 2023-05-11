@@ -1,4 +1,4 @@
-let API_URL = `http://localhost:8080/users`;
+let API_URL = `http://localhost:8000/users`;
 
 let form = document.querySelector("#userForm");
 let firsName = document.querySelector("#firsName");
@@ -55,8 +55,8 @@ form.addEventListener("submit", function (e) {
     firstName: firsName.value,
     lastName: lastName.value,
     email: emailInput.value,
-    number: numberInput.value
-    // .splice(0,numberInput.value.length-4,"*")
+    number:numberInput.value.slice(-4).padStart(numberInput.value.length,"*")
+    
   }
   if(firsName.value&&lastName.value&&emailInput.value&&numberInput.value){
 
@@ -100,23 +100,23 @@ arrowUp.style.display = "none";
 arrowDown.style.display = "none";
 // let asc=true
 // firstNameClick.addEventListener("click",function(){
-//   // let sortedName;
+//   let sortedName;
 //   asc=!asc
 //   if(!asc){
-//     // copyData=arr
-//     // copyData.sort((a,b)=>b.firsName.localeCompare(a.firsName))
-//   //   console.log(copyData);
-//   // arrowUp.style.display="none"
-//   // arrowDown.style.display="inline"
-//   // getData()
+//     copyData=arr
+//     copyData.sort((a,b)=>b.firsName.localeCompare(a.firsName))
+//     console.log(copyData);
+//   arrowUp.style.display="none"
+//   arrowDown.style.display="inline"
+//   getData()
 
 //   }
 
-//   // else{
-//   //   copyData.sort((a,b)=>a.firsName.localeCompare(b.firsName))
-//   //   arrowUp.style.display="inline"
-//   // arrowDown.style.display="none"
-//   // // getData()
-//   // }
+//   else{
+//     copyData.sort((a,b)=>a.firsName.localeCompare(b.firsName))
+//     arrowUp.style.display="inline"
+//   arrowDown.style.display="none"
+//   getData()
+//   }
 
 // })
