@@ -2,10 +2,10 @@ let API_URL = `http://universities.hipolabs.com/search?country=azerbaijan&name=`
 let tbody = document.querySelector("#tbody");
 let search = document.querySelector(".form-control");
 let loading = document.querySelector(".loading");
-async function data() {
+async function data(data) {
   tbody.innerHTML = "";
-  let res = await axios(API_URL);
-  let data = await res.data;
+  //// let res = await axios(API_URL);
+  //// let data = await res.data;
   data.forEach((element) => {
     tbody.innerHTML += `
     <tr>
@@ -24,7 +24,12 @@ data();
 window.onload = function () {
   tbody.innerHTML = "";
   loading.style.display = "flex";
-  axios(`http://universities.hipolabs.com/search?country=Azerbaijan`);
+  axios(`http://universities.hipolabs.com/search?country=Azerbaijan`).then(
+    (res) => {
+      loading.style.display = "none";
+      data(res.data);
+    }
+  );
 };
 
 search.addEventListener("input", function (e) {
@@ -32,7 +37,8 @@ search.addEventListener("input", function (e) {
   loading.style.display = "flex";
   axios(
     `http://universities.hipolabs.com/search?country=azerbaijan&name=${e.target.value}`
-  )
-    .then(() => (loading.style.display = "none"))
-    .then((res) => data(res.data));
+  ).then((res) => {
+    loading.style.display = "none";
+    data(res.data);
+  });
 });
