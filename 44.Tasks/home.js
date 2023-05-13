@@ -18,12 +18,12 @@ async function getData() {
             <div class="card" >
                 <div class="card-body">
                  <h5 class="card-title">${element.title}</h5>
-                 <p class="card-text">${element.body}</p>
+                 <p class="card-text">${element.body.slice(0,50)}...</p>
                  <p>written by ${element.author}</p>
                  <a  href="detail.html?id=${element.id}" class="text-success">Read More</a><br><br>
 
                  <button onclick=deleteBtn(${element.id}) class="btn btn-danger">Delete</button>
-                 <a onclick=editBtn(${element.id}) href="#" class="btn btn-warning">Edit</a>
+                 <a href="edit.html?id=${element.id}"  class="btn btn-warning">Edit</a>
                </div>
              </div>
              <div class="col col-2 m-3"></div>
@@ -38,13 +38,3 @@ function deleteBtn(id, btn) {
   btn.closest("span").remove();
 }
 
-function editBtn(id) {
-  editStatus = true;
-  editId = id;
-  axios(`${API_URL}/${id}`);
-  blogTitle.value = title.value;
-  blogBody.value = body.value;
-  blogAuthor = author.value;
-
-  window.location = "form.html";
-}

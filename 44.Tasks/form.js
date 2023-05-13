@@ -8,14 +8,14 @@ let form = document.querySelector("#form");
 
 let authorChange;
 blogAuthor.addEventListener("change", function (e) {
-  authorChange = e.target.value;
+  authorChange = e.target.value
 });
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   let obj = {
     title: blogTitle.value,
     body: blogBody.value,
-    author: blogAuthor.value,
+    author: blogAuthor.value||"Ipsum"
   };
   axios.post(API_URL, obj);
   window.location = "index.html";

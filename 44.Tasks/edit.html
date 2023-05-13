@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css">
-    <title>Form</title>
+    <title>Edit</title>
     <style></style>
   </head>
   <body>
@@ -20,7 +20,7 @@
 
     <div class="container">
       <form id="form" action="">
-        <h3>Add a New Blog</h3>
+        <h3>Edit Blog</h3>
         <label for="title" >Blog title:</label><br>
         <input type="text" id="title"><br>
         <p>Blog body:</p>
@@ -28,12 +28,12 @@
        <br>
         <p>Blog author:</p>
         <select name="" id="author" >
-            <option value="" hidden>select author</option>
-            <option value="Dolar">Dolar</option>
-            <option value="Lorem">Lorem</option>
-            <option value="Json">Json</option>
+            <option value="" disabled>select author</option>
+            <option value="dolar">Dolar</option>
+            <option value="param">Lorem</option>
+            <option value="json">Json</option>
         </select><br><br>
-        <button type="submit" class="add">Add Blog</button>
+        <button type="submit" class="add">Edit Blog</button>
     </form>
     </div>
     <script
@@ -43,7 +43,7 @@
       referrerpolicy="no-referrer"
     ></script>
     
-    <script src="./form.js"></script>
+    <script src="./edit.js"></script>
 
   </body>
 </html>
