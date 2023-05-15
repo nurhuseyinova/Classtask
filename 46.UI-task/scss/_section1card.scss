@@ -1,0 +1,48 @@
+.sec1 {
+  .sec1div {
+    .commoncard {
+      margin: 10px 0;
+        display: none;
+      .card {
+        display: flex;
+        padding: 15px;
+        .iddate {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 10px;
+          .id {
+            color: blue;
+          }
+          .date {
+            color: green;
+          }
+        }
+        .idimg {
+          display: flex;
+          position: relative;
+          .btndiv {
+        
+            position: absolute;
+            right: 10px;
+          }
+          .imgnote {
+            display: flex;
+            gap: 10px;
+            img {
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+            }
+          }
+          //?
+          @media only screen and (max-width: 768px) {
+           flex-direction: column;
+         }
+        }
+      }
+         @media only screen and (max-width: 992px) {
+            display: block;
+         }
+    }
+  }
+}

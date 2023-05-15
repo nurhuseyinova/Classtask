@@ -1,0 +1,38 @@
+.sec1 {
+  .note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    h1 {
+      margin-bottom: 10px;
+      position: absolute;
+      &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: red;
+        width: 100%;
+      }
+    }
+  }
+  .sec1div {
+    padding: 100px 0;
+    table {
+      tbody {
+        tr {
+          td {
+            img {
+                height: 10vh;
+              width: 80px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+}
