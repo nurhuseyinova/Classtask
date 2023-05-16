@@ -19,11 +19,15 @@
   .sec1div {
     padding: 100px 0;
     table {
+      th{
+        text-align: center;
+      }
       tbody {
         tr {
           td {
+            text-align: center;
             img {
-                height: 10vh;
+              height: 10vh;
               width: 80px;
               border-radius: 50%;
             }

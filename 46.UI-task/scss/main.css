@@ -14,7 +14,11 @@ a {
 }
 
 .sec1 {
-  padding: 7% 10%;
+  padding: 8% 10%;
+}
+
+.formSec {
+  padding: 4% 10%;
 }
 
 header {
@@ -36,7 +40,6 @@ header .head nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(236, 199, 129);
 }
 header .head nav h1 {
   color: black;
@@ -66,24 +69,38 @@ header .head nav ul li a:hover {
     display: none;
   }
 }
-header .head nav .fa-bars {
+header .head nav .fa-solid {
   display: none;
 }
 @media only screen and (max-width: 992px) {
-  header .head nav .fa-bars {
+  header .head nav .fa-solid {
     display: block;
   }
 }
 @media only screen and (max-width: 768px) {
-  header .head nav .fa-bars {
+  header .head nav .fa-solid {
     color: rgb(255, 255, 255);
   }
 }
+header .head nav.show {
+  align-items: start;
+  height: 100vh;
+  background-color: transparent;
+}
+header .head nav.show h1 {
+  display: none;
+}
+header .head nav.show ul {
+  position: relative;
+  top: 200px;
+  left: 35%;
+  display: block;
+}
+header .head nav.show ul li a {
+  color: white;
+}
 @media only screen and (max-width: 768px) {
   header .head {
-    background-color: black;
-  }
-  header .head nav {
     background-color: black;
   }
 }
@@ -112,6 +129,12 @@ header .head nav .fa-bars {
 }
 .sec1 .sec1div {
   padding: 100px 0;
+}
+.sec1 .sec1div table th {
+  text-align: center;
+}
+.sec1 .sec1div table tbody tr td {
+  text-align: center;
 }
 .sec1 .sec1div table tbody tr td img {
   height: 10vh;
@@ -150,6 +173,7 @@ header .head nav .fa-bars {
 .sec1 .sec1div .commoncard .card .idimg .btndiv {
   position: absolute;
   right: 10px;
+  bottom: 0px;
 }
 .sec1 .sec1div .commoncard .card .idimg .imgnote {
   display: flex;
@@ -160,13 +184,24 @@ header .head nav .fa-bars {
   width: 50px;
   border-radius: 50px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 556px) {
   .sec1 .sec1div .commoncard .card .idimg {
+    position: static;
+    display: flex;
     flex-direction: column;
+  }
+  .sec1 .sec1div .commoncard .card .idimg .btndiv {
+    position: static;
+    padding-left: 60px;
   }
 }
 @media only screen and (max-width: 992px) {
   .sec1 .sec1div .commoncard {
     display: block;
   }
+}
+
+.formSec .row h1 {
+  text-align: center;
+  margin: 30px 0;
 }/*# sourceMappingURL=main.css.map */

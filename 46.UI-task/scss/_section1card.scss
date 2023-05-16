@@ -24,6 +24,7 @@
         
             position: absolute;
             right: 10px;
+            bottom:0px
           }
           .imgnote {
             display: flex;
@@ -34,9 +35,14 @@
               border-radius: 50px;
             }
           }
-          //?
-          @media only screen and (max-width: 768px) {
+          @media only screen and (max-width: 556px) {
+           position: static;
+           display: flex;
            flex-direction: column;
+           .btndiv{
+            position: static;
+            padding-left:  60px;
+           }
          }
         }
       }
