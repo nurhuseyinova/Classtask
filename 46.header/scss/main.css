@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 }
 
-.container {
+.header {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -72,23 +72,31 @@ header .container .header.show {
   display: flex;
   align-items: start;
   background-color: black;
+  position: relative;
 }
 header .container .header.show h1 {
   color: white;
 }
 header .container .header.show .search {
-  position: relative;
-  top: 35%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
   display: block;
+}
+@media only screen and (max-width: 767px) {
+  header .container .header.show .search .searchinput {
+    padding: 10px 20px;
+    left: 20%;
+  }
 }
 header .container .header.show .menu {
   color: white !important;
 }
 header .container .header.show nav ul {
   display: block;
-  position: relative;
-  top: 300px;
-  left: -200px;
+  position: absolute;
+  top: 400px;
+  right: 50%;
   display: block;
 }
 header .container .header.show nav ul li a {
