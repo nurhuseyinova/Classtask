@@ -31,14 +31,8 @@ async function detailData() {
             <button>${data.borders.borders[1]}</button> 
             
         </p>
-        
-        
        </div>
-
-
     </div>
-        
-        
         `
 }
 detailData();
