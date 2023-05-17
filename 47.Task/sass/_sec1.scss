@@ -1,0 +1,24 @@
+.loading{
+    position: relative;
+    left:40%;
+    @media only screen  and (max-width:768px) {
+        position: static;
+    }
+}
+.selecoption{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    @media only screen  and (max-width:768px) {
+        justify-content: start;
+    }
+}
+#select{
+    padding: 5px 30px 5px 10px;
+}
+#search{
+    padding: 5px 300px 5px 10px;
+    @media only screen  and (max-width:768px) {
+        padding: 5px 30px 5px 10px;
+    }
+}
