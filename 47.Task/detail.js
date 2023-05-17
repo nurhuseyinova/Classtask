@@ -1,11 +1,11 @@
-let API_URL = `https://restcountries.com/v2/all`;
-let name = new URLSearchParams(window.location.search).get("name");
+let API_URL = `https://restcountries.com/v3.1/name`;
+let names = new URLSearchParams(window.location.search).get("name");
 let detailEL = document.querySelector(".detail");
 
 async function detailData() {
-  let res = await axios(`${API_URL}/${name}`);
+  let res = await axios(`${API_URL}/${names}`);
   let data = await res.data;
-  detailEL.innerHTML += `
+  detailEL.innerHTML = `
         <div class="col col-12 col-md-6 col-sm-12 image">
         <img src="${data.flags.svg}" alt="">
     </div>
@@ -39,6 +39,6 @@ async function detailData() {
     </div>
         
         
-        `;
+        `
 }
 detailData();

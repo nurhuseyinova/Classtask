@@ -3,7 +3,7 @@ let row = document.querySelector(".countries");
 let search = document.querySelector("#search");
 let select = document.querySelector("#select");
 let loading = document.querySelector(".loading");
-let name = new URLSearchParams(window.location.search).get("name");
+let names = new URLSearchParams(window.location.search).get("name");
 let option;
 
 loading.style.display = "none";
@@ -41,6 +41,7 @@ function getAlldata(arr) {
 }
 
 search.addEventListener("input", function (e) {
+  loading.style.display="flex"
   console.log(e.target.value);
   axios(`${API_URL}`).then((res) => {
     let filtered = res.data.filter((el) => {
@@ -50,14 +51,17 @@ search.addEventListener("input", function (e) {
     });
     getAlldata(filtered);
     console.log(filtered);
+    loading.style.display="none"
   });
 });
   select.addEventListener("change", function (e) {
-    axios(`${API_URL}/${name}`).then((res) => {
+    loading.style.display="flex"
+    axios(`${API_URL}`).then((res) => {
       let selected = res.data.filter((el) => {
-        return el.name == e.target.value;
+        return el.region == e.target.value;
       });
       getAlldata(selected);
+      loading.style.display="none"
       
     });
   });
