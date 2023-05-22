@@ -1,0 +1,44 @@
+.prices {
+    opacity: 0.5;
+    padding: 100px 0;
+  background-color: blue;
+  .container {
+    #pricesHead {
+      font-size: 30px;
+      &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 70px;
+        background-color: white;
+        position: relative;
+        left: 47%;
+      }
+    }
+    p {
+      text-align: center;
+      color: $color-white;
+    }
+    .row {
+      .col {
+        .iconNote {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+          i {
+            color: $color-black;
+            background-color: white;
+            border-radius: 50px;
+           border: 5px solid rgb(96, 207, 252);
+            padding: 20px;
+          }
+          .pricesNote {
+            h3 {
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

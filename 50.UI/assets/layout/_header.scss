@@ -1,0 +1,34 @@
+header{
+    background-color: $color-white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    .container{
+        nav{
+            padding: 25px 0;
+            @include display;
+            ul{@include display;
+                gap: 30px;
+                li{
+                    a{text-transform: uppercase;
+                        color: $color-black;
+                        &:hover{
+                            color: $color-blue;
+                        }
+                    }
+                }
+                @media only screen and (max-width:992px) {
+                    display: none;
+                    
+                }
+            }
+            #bars{
+                display: none;
+                @media only screen and (max-width:992px) {
+                    display: block;
+                    
+                }
+            }
+        }
+    }
+}

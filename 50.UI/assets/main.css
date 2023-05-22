@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+header .container nav {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+header .container nav ul li a {
+  text-transform: uppercase;
+  color: black;
+}
+header .container nav ul li a:hover {
+  color: blue;
+}
+@media only screen and (max-width: 992px) {
+  header .container nav ul {
+    display: none;
+  }
+}
+header .container nav #bars {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  header .container nav #bars {
+    display: block;
+  }
+}
+
+.home {
+  background-image: url("../assets/image/server-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+.home .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150px 0;
+}
+.home .container .home1 #startednow {
+  background-color: orangered;
+  padding: 10px 30px;
+  color: white;
+}
+.home .container .home1 #startednow:hover {
+  color: blue;
+}
+.home .container .home1 .homeHead {
+  text-align: center;
+  background-color: orangered;
+  width: 400px;
+  padding: 10px;
+  position: relative;
+  left: 45%;
+}
+@media only screen and (max-width: 992px) {
+  .home .container .home1 .homeHead {
+    left: 20%;
+  }
+}
+@media only screen and (max-width: 556px) {
+  .home .container .home1 .homeHead {
+    width: 250px;
+  }
+}
+.home .container .home1 .herro-banner1 h1 {
+  font-size: 50px;
+  color: white;
+}
+.home .container .home1 .herro-banner1 p {
+  color: white;
+}
+.home .container .home1 .herro-banner1 #bignote {
+  font-size: 40px;
+}
+.home .container .home1 .herro-banner2 .item {
+  display: flex;
+  gap: 20px;
+}
+.home .container .home1 .herro-banner2 .item .summo1 {
+  display: flex;
+  gap: 10px;
+}
+.home .container .home1 .herro-banner2 .item .summo1 i {
+  color: white;
+}
+.home .container .home1 .herro-banner2 .item .summo1 p {
+  color: white;
+}
+.home .container .home2 img {
+  width: 400px;
+}
+@media only screen and (max-width: 992px) {
+  .home .container {
+    flex-direction: column;
+  }
+}
+
+.services .container {
+  padding: 50px 0;
+}
+.services .container .note {
+  padding: 0 300px;
+}
+.services .container .note .servicesHead {
+  font-size: 30px;
+}
+.services .container .note .servicesHead::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 70px;
+  background-color: black;
+  position: relative;
+  left: 43%;
+}
+.services .container .note p {
+  text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  .services .container .note {
+    padding: 0;
+  }
+}
+.services .container .row .col {
+  padding: 30px 20px;
+}
+.services .container .row .col img {
+  position: relative;
+  left: 40%;
+}
+.services .container .row .col .cardHead {
+  font-size: 20px;
+}
+.services .container .row .col p {
+  text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  .services .container {
+    padding: 60px;
+  }
+}
+
+.prices {
+  opacity: 0.5;
+  padding: 100px 0;
+  background-color: blue;
+}
+.prices .container #pricesHead {
+  font-size: 30px;
+}
+.prices .container #pricesHead::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 70px;
+  background-color: white;
+  position: relative;
+  left: 47%;
+}
+.prices .container p {
+  text-align: center;
+  color: white;
+}
+.prices .container .row .col .iconNote {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.prices .container .row .col .iconNote i {
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  border: 5px solid rgb(96, 207, 252);
+  padding: 20px;
+}
+.prices .container .row .col .iconNote .pricesNote h3 {
+  color: white;
+}
+
+.news {
+  padding: 50px 0;
+}
+.news .container .newsHead {
+  padding: 0 300px;
+}
+.news .container .newsHead .newNote {
+  font-size: 30px;
+}
+.news .container .newsHead .newNote::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 70px;
+  background-color: black;
+  position: relative;
+  left: 43%;
+}
+.news .container .newsHead p {
+  text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  .news .container .newsHead {
+    padding: 0;
+  }
+}
+.news .container .row .col input {
+  padding: 5px;
+  width: 300px;
+}
+.news .container .row .sort {
+  display: flex;
+  justify-content: end !important;
+}
+.news .container .row .sort button {
+  color: white;
+  background-color: coral;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: none;
+}
+.news .container .row .col img {
+  height: 250px;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,46 @@
+.services {
+  .container {
+    padding: 50px 0;
+    .note {
+        padding:0 300px ;
+      .servicesHead {
+        font-size: 30px;
+        &::after {
+          content: "";
+          display: block;
+          height: 2px;
+          width: 70px;
+          background-color: black;
+          position: relative;
+          left: 43%;
+        }
+      }
+      p {
+        text-align: center;
+      }
+      @media only screen and (max-width:992px) {
+        padding: 0;
+        
+    }
+    }
+    .row {
+      .col {
+        padding: 30px 20px;
+        img {
+          position: relative;
+          left: 40%;
+        }
+        .cardHead {
+          font-size: 20px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+    @media only screen and (max-width:992px) {
+      padding: 60px ;
+      
+  }
+  }
+}

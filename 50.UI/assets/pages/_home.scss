@@ -1,0 +1,79 @@
+.home {
+  background-image: url("../assets/image/server-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  width: 100%;
+  .container {
+    
+
+    @include display;
+    padding: 150px 0;
+    .home1 {
+      #startednow {
+        background-color: orangered;
+        padding: 10px 30px;
+        color: $color-white;
+        &:hover {
+          color: $color-blue;
+        }
+      }
+      .homeHead {
+        text-align: center;
+        background-color: orangered;
+        width: 400px;
+        padding: 10px;
+        position: relative;
+        left: 45%;
+        @media only screen and (max-width:992px) {
+          left: 20%;
+          
+      }
+        @media only screen and (max-width:556px) {
+
+         width: 250px;
+          
+      }
+      }
+      .herro-banner1 {
+        h1 {
+            font-size: 50px;
+          color: $color-white;
+        }
+        p {
+          color: $color-white;
+        }
+        #bignote {
+          font-size: 40px;
+        }
+      }
+      .herro-banner2 {
+        .item {
+          display: flex;
+          gap: 20px;
+          .summo1 {
+            display: flex;
+            gap: 10px;
+            i {
+              color: $color-white;
+            }
+            p {
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+    .home2{
+        img{
+            width: 400px;
+        }
+    }
+    @media only screen and (max-width:992px) {
+      flex-direction: column;
+      
+  }
+  }
+}
