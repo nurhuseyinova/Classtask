@@ -1,0 +1,70 @@
+header{
+    
+        .header-top{
+            background-color: brown;
+            nav{@include display;
+                height: 8vh;
+                margin: 0;
+                padding-top: 13px;
+
+               
+                .top-ul{
+                    @include display;
+                    gap: 20px;
+                    li{
+                        a{color: black;
+                            
+                            &:hover{
+                                color: white;
+                                  }
+                        }
+                    }}
+                    .top-hover{
+                       li{
+                        a{
+                            padding: 15px 10px;
+                            &:hover{
+                                background-color: yellow !important;
+                              
+    
+                            }
+                        }
+                       }
+                    }
+
+                
+
+            }
+        }
+        .header-bottom{
+            nav{@include display;
+                height: 15vh;
+                
+                .bottom-ul{@include display;
+                    gap:20px;
+                    li{
+                        a{
+                            color: grey;
+                            &:hover{
+                                color: brown;
+                            }
+                        }
+                    }
+                    @media only screen and (max-width:992px) {
+                        display: none;
+                        
+                    }
+                }
+                .fa-bars{
+                    color: brown;
+                    display: none;
+                    font-size: 40px;
+                    @media only screen and (max-width:992px) {
+                        display: block;
+                        
+                    }
+                }
+            }
+        }
+
+    }

@@ -1,0 +1,32 @@
+.children{
+    .container{
+        padding: 50px 0;
+        .row{
+            .col{
+                img{
+                    height: 60vh;
+                    width: 90%;
+                }
+               .note{
+                padding-right: 60px;
+                p{color: gray;}
+               }
+                a{
+                    color: brown;
+                    border: 2px solid brown;
+                    border-radius: 5px;
+                    padding:10px;
+                    &:hover{
+                        color: white;
+                        background-color: brown;
+                    }
+                }
+                .accordion-item{
+                    border: 1px solid black;
+                    
+                }
+                
+            }
+        }
+    }
+}

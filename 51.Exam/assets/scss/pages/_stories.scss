@@ -1,0 +1,44 @@
+.stories{
+    .container{padding: 50px 0;
+        .row{
+            h1{
+                text-align: center;
+                margin: 20px 0;
+
+
+            }
+            .col{
+                height: 60vh;
+               
+
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                p{
+                    display: none;
+                    transition: liner 2s;
+                    &:hover{
+                        transform: scale(2);
+                        display: block;
+                        
+                    }
+                }
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+            .box1{
+                background-image: url("../assets/image/work_thumb_1.jpg");
+                
+            }
+            .box2{
+                background-image: url("../assets/image/work_thumb_2.jpg");
+                
+            }
+            .box3{
+                background-image: url("../assets/image/work_thumb_3.jpg");
+              
+            }
+        }
+    }
+}
