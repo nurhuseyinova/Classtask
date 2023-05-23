@@ -1,4 +1,4 @@
-let API_URL=`http://localhost:8000/data`
+let API_URL=`http://localhost:8080/data`
 let card=document.querySelector(".api");
 let search=document.querySelector("#search");
 let sortBtn=document.querySelector("#sorted");
@@ -18,7 +18,7 @@ async function getData(){
                 <p>${element.title}</p>
                 <p>${element.information}</p>
                 <p>${element.price}</p>
-                <a  class="btn btn-info" >Add Fav</a>
+                <button onclick=addFavData("${element.id}")  class="btn btn-info" >Add Fav</button>
                 <button class="btn btn-danger" onclick=deleteBtn("${element.id}")>Delete</button>
             </div>
         `
@@ -66,4 +66,9 @@ sortBtn.addEventListener("click",function(){
 
 })
 
-
+async function addFavData(id){
+    let res=await axios(`${API_URL}/${id}`)
+    let obj=await res.data
+    await axios.post(`http://localhost:8080/favorits`,obj)
+    
+}

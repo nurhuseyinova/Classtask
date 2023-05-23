@@ -1,4 +1,4 @@
-let API_URL=`http://localhost:8000/data`
+let API_URL=`http://localhost:8080/data`
 let input=document.querySelectorAll(".form-control")
 let form=document.querySelector("form")
 
@@ -12,6 +12,6 @@ form.addEventListener("submit",function(e){
 
     }
     if(input[0].value&&input[1].value&&input[2].value&&input[3].value){
-    axios.post(API_URL,obj)}
-    window.location="index.html"
+    axios.post(API_URL,obj)
+    window.location="index.html"}
 })

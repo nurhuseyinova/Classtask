@@ -47,6 +47,11 @@ header .container nav #bars {
     display: block;
   }
 }
+@media only screen and (max-width: 556px) {
+  header .container nav {
+    padding: 0 10%;
+  }
+}
 
 .home {
   background-image: url("../assets/image/server-banner.jpg");
@@ -85,7 +90,10 @@ header .container nav #bars {
 }
 @media only screen and (max-width: 556px) {
   .home .container .home1 .homeHead {
-    width: 250px;
+    width: 200px;
+  }
+  .home .container .home1 .homeHead h2 {
+    font-size: 15px;
   }
 }
 .home .container .home1 .herro-banner1 h1 {
@@ -114,6 +122,13 @@ header .container nav #bars {
 }
 .home .container .home2 img {
   width: 400px;
+}
+@media only screen and (max-width: 556px) {
+  .home .container .home2 img {
+    position: relative;
+    bottom: -60px;
+    width: 200px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .home .container {
@@ -245,6 +260,18 @@ header .container nav #bars {
   border: none;
 }
 .news .container .row .col img {
+  height: 250px;
+  width: 100%;
+}
+
+.favorites .container {
+  padding: 50px 0;
+}
+.favorites .container h1 {
+  text-align: center;
+  color: red;
+}
+.favorites .container .row .col img {
   height: 250px;
   width: 100%;
 }/*# sourceMappingURL=main.css.map */

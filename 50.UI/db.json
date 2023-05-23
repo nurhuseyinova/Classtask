@@ -34,13 +34,29 @@
       "title": "Husfessional Website Hosting",
       "id": 3,
       "information": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born."
+    }
+  ],
+  "favorits": [
+    {
+      "price": 700,
+      "photo": "./assets/image/st-blog-2.jpg",
+      "title": "Apifessional Website Hosting",
+      "id": 4,
+      "information": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born."
     },
     {
-      "title": "title",
-      "information": "ttttt",
+      "price": 500,
       "photo": "./assets/image/st-blog-2.jpg",
-      "price": "114",
-      "id": 6
+      "title": "Lightfessional Website Hosting",
+      "id": 5,
+      "information": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born."
+    },
+    {
+      "price": 1300,
+      "photo": "./assets/image/st-blog-3.jpg",
+      "title": "Husfessional Website Hosting",
+      "id": 3,
+      "information": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born."
     }
   ]
 }
