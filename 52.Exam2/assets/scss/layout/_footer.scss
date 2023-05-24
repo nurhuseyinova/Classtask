@@ -1,0 +1,14 @@
+footer{
+    background-color: rgb(11, 12, 17);
+    .container{
+        .note{
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                color: gray;
+            }
+        }
+    }
+}

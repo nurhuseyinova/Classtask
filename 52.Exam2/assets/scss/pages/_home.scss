@@ -1,0 +1,75 @@
+.home {
+  .container {
+    padding: 50px 100px;
+    .home-note {
+      padding: 0 100px;
+      text-align: center;
+      h1 {
+        &::after {
+          content: "";
+          display: block;
+          height: 4px;
+          width: 30px;
+          background-color: brown;
+          position: relative;
+          left: 48%;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        padding: 20px;
+      }
+    }
+    .row {
+      .col {
+        #search {
+          padding: 10px;
+          width: 300px;
+        }
+      }
+      .home-sort {
+        display: flex;
+        justify-content: end;
+        @media screen and (max-width: 767px) {
+          justify-content: start;
+        }
+      }
+    }
+    .api {
+      .col {
+        text-align: center;
+        .api-img {
+          position: relative;
+          left: 30%;
+          padding: 25px 10px;
+          border: 1px solid brown;
+          border-radius: 50%;
+          width: 100px;
+          margin-bottom: 10px;
+          img {
+            width: 50%;
+          }
+        }
+        h3 {
+          text-transform: uppercase;
+          font-size: 20px;
+        }
+        p {
+          color: gray;
+        }
+        a {
+          border: 1px solid brown;
+          padding: 10px 20px;
+          color: brown;
+        }
+        .edit {
+          padding: 5px 15px;
+          color: white;
+          border: none;
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      padding: 50px;
+    }
+  }
+}

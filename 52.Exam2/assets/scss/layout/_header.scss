@@ -1,0 +1,63 @@
+header {
+    z-index: 15;
+    .container {
+        nav {
+        //  background-color: rgba(0, 0, 0,0.4);
+      @include display;
+      height: 10vh;
+      position: fixed;
+      width: 90%;
+      z-index: 10;
+      .logo {
+        width: 10%;
+      }
+      ul {
+        @include display;
+        gap: 15px;
+        li {
+          a {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            &:hover {
+              color: brown;
+            }
+          }
+        }
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
+      }
+      .fa-bars {
+        font-size: 20px;
+        display: none;
+        @media screen and (max-width: 992px) {
+            color: white;
+          display: block;
+        }
+      }
+    }
+  }
+  .header-carusel {
+    img {
+      height: 100vh;
+    }
+    .carousel-caption {
+      top: 20%;
+      h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+      p {
+        text-transform: uppercase;
+      }
+      a {
+        text-transform: uppercase;
+        background-color: brown !important;
+        padding: 10px 20px !important;
+        border-radius: 5px;
+        color: white;
+      }
+    }
+  }
+}

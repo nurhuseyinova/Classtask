@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "title": "Web Development",
+      "id": 1,
+      "price": "100",
+      "photo": "./assets/image/gear.png",
+      "info": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    {
+      "title": "Nurlana",
+      "id": 2,
+      "price": "1300",
+      "photo": "./assets/image/growth.png",
+      "info": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    {
+      "title": "digital media",
+      "id": 3,
+      "price": 1550,
+      "photo": "./assets/image/gear.png",
+      "info": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    }
+  ],
+  "favorites": [
+    {
+      "title": "digital media",
+      "id": 3,
+      "price": 1550,
+      "photo": "./assets/image/gear.png",
+      "info": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    }
+  ]
+}
