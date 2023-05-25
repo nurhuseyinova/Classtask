@@ -10,16 +10,16 @@ a {
 }
 
 header {
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 15;
+  width: 100%;
+  position: fixed;
 }
 header .container nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  position: fixed;
-  width: 90%;
-  z-index: 10;
 }
 header .container nav .logo {
   width: 10%;
@@ -53,20 +53,21 @@ header .container nav .fa-bars {
     display: block;
   }
 }
-header .header-carusel img {
+
+.header-carusel img {
   height: 100vh;
 }
-header .header-carusel .carousel-caption {
+.header-carusel .carousel-caption {
   top: 20%;
 }
-header .header-carusel .carousel-caption h1 {
+.header-carusel .carousel-caption h1 {
   font-size: 40px;
   text-transform: uppercase;
 }
-header .header-carusel .carousel-caption p {
+.header-carusel .carousel-caption p {
   text-transform: uppercase;
 }
-header .header-carusel .carousel-caption a {
+.header-carusel .carousel-caption a {
   text-transform: uppercase;
   background-color: brown !important;
   padding: 10px 20px !important;

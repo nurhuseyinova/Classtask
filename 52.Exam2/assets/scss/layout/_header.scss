@@ -1,13 +1,13 @@
 header {
+  background-color: rgba(0, 0, 0,0.4);
     z-index: 15;
+    width: 100%;
+    position: fixed;
     .container {
         nav {
-        //  background-color: rgba(0, 0, 0,0.4);
       @include display;
       height: 10vh;
-      position: fixed;
-      width: 90%;
-      z-index: 10;
+      
       .logo {
         width: 10%;
       }
@@ -38,6 +38,7 @@ header {
       }
     }
   }
+}
   .header-carusel {
     img {
       height: 100vh;
@@ -60,4 +61,4 @@ header {
       }
     }
   }
-}
+
