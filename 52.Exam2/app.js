@@ -2,8 +2,15 @@ let API_URL = `http://localhost:8000/data`;
 let card = document.querySelector(".api");
 let search = document.querySelector("#search");
 let sort = document.querySelector("#sort");
+let bar=document.querySelector(".fa-bars")
+let nav=document.querySelector("nav")
 let sorted = [];
 let filtered = [];
+
+bar.addEventListener("click",function(){
+nav.classList.toggle("show")
+})
+
 async function getData() {
   card.innerHTML = "";
   let res = await axios(API_URL);

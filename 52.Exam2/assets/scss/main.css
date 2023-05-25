@@ -53,6 +53,19 @@ header .container nav .fa-bars {
     display: block;
   }
 }
+@media screen and (max-width: 992px) {
+  header .container nav.show {
+    padding-top: 50px;
+    height: 100vh;
+    align-items: start;
+  }
+  header .container nav.show ul {
+    display: block;
+    position: relative;
+    top: 100px;
+    flex-direction: column;
+  }
+}
 
 .header-carusel img {
   height: 100vh;

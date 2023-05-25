@@ -36,6 +36,19 @@ header {
           display: block;
         }
       }
+      @media screen and (max-width: 992px) {
+        &.show{padding-top:  50px;
+          height: 100vh;
+          align-items: start;
+          ul{
+            display: block;
+            position: relative;
+            top: 100px;
+            flex-direction: column;
+          }
+        }
+    }
+     
     }
   }
 }

@@ -20,6 +20,27 @@
       "price": 1550,
       "photo": "./assets/image/gear.png",
       "info": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    {
+      "title": "Kanan",
+      "info": "Amirov",
+      "price": "90000",
+      "photo": "./assets/image/gear.png",
+      "id": 4
+    },
+    {
+      "title": "Fugiat ea reprehende",
+      "info": "Accusamus veritatis ",
+      "price": "435",
+      "photo": "./assets/image/camera.png",
+      "id": 5
+    },
+    {
+      "title": "Aute ex quia est ex",
+      "info": "Elit elit iste vol",
+      "price": "566",
+      "photo": "./assets/image/growth.png",
+      "id": 6
     }
   ],
   "favorites": [

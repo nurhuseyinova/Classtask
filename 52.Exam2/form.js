@@ -13,7 +13,7 @@ form.addEventListener("submit", function (e) {
     price: input[2].value,
     photo: `./assets/image/${input[3].value.split("\\")[2]}`,
   };
-
+if(input[0].value&&input[1].value&&input[2].value&&input[3].value){
   if (id) {
     axios.patch(`${API_URL}/${id}`, obj);
     submitBtn.innerHTML = "Submit";
@@ -25,6 +25,7 @@ form.addEventListener("submit", function (e) {
 
   }
   window.location = "index.html";
+}
 });
 
 if (id) {
