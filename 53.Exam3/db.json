@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "The Upper Eye",
+      "price": 1200,
+      "photo": "./assests/scss/image/p1.png",
+      "info": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 3,
+      "title": "The Upper Eye",
+      "price": 1200,
+      "photo": "./assests/scss/image/p3.png",
+      "info": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 4,
+      "title": "The Upper Eye",
+      "price": 1200,
+      "photo": "./assests/scss/image/p4.png",
+      "info": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "id": 2,
+      "title": "Nur Upper Eye",
+      "price": 1500,
+      "photo": "./assests/scss/image/p1.png",
+      "info": "Who are in extremely love with eco friendly system."
+    },
+    {
+      "title": "Ulfet",
+      "info": "Zakirli",
+      "price": "901",
+      "photo": "./assests/scss/image/p4.png",
+      "id": 6
+    }
+  ],
+  "favorites": []
+}

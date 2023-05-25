@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(113, 113, 231, 0.4);
+  z-index: 10;
+}
+header .container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 14vh;
+}
+header .container nav .head-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+header .container nav .head-ul li a {
+  text-transform: uppercase;
+  color: white;
+}
+@media only screen and (max-width: 992px) {
+  header .container nav .head-ul {
+    display: none;
+  }
+}
+header .container nav .fa-bars {
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  header .container nav .fa-bars {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header .container nav.show {
+    height: 100vh;
+    padding-top: 20px;
+    align-items: start;
+  }
+  header .container nav.show .head-ul {
+    display: block;
+    position: relative;
+    top: 100px;
+  }
+}
+
+#home {
+  background-image: url("./image/banner-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#home .container {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+#home .container .row .col .home-note1 {
+  font-size: 60px;
+  color: white;
+}
+@media only screen and (max-width: 992px) {
+  #home .container .row .col .home-note1 {
+    font-size: 30px;
+  }
+}
+#home .container .row .col .home-note2 {
+  font-size: 15px;
+  color: white;
+}
+#home .container .row .col a {
+  border: 1px solid white;
+  padding: 8px 20px;
+  background-color: white;
+  color: black;
+  transition: all 1s linear;
+  font-weight: bold;
+  font-size: 10px;
+}
+#home .container .row .col a:hover {
+  color: white;
+  background-color: transparent;
+}
+@media only screen and (max-width: 992px) {
+  #home .container .row .col img {
+    position: relative;
+    top: 35%;
+    width: 300px;
+  }
+}
+
+#about .container {
+  padding: 50px 0;
+}
+#about .container .about-note {
+  text-align: center;
+}
+#about .container .about-note h1 {
+  color: black;
+}
+#about .container .about-note p {
+  font-size: 20px;
+  color: rgb(95, 93, 93);
+}
+#about .container .search-sort input {
+  padding: 5px;
+  width: 300px;
+}
+#about .container .row .col .card-img {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#about .container .row .col .card-img img {
+  position: relative;
+  left: 35%;
+  width: 30%;
+}
+#about .container .row .col .card-note {
+  text-align: center;
+}
+#about .container .row .col .card-note h4 {
+  font-weight: bold;
+}
+#about .container .row .col .card-note p {
+  color: gray;
+}
+#about .container .row .col .card-note a {
+  border: 1px solid blue;
+  padding: 8px 20px;
+  background-color: white;
+  color: black;
+  transition: all 1s linear;
+  font-weight: bold;
+  font-size: 10px;
+}
+#about .container .row .col .card-note a:hover {
+  color: white;
+  background-color: blue;
+}
+
+.favorite .container {
+  padding: 50px 0;
+}
+.favorite .container h1 {
+  text-align: center;
+  color: blue;
+  margin-bottom: 20px;
+}
+.favorite .container .row .col .card-img {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.favorite .container .row .col .card-img img {
+  position: relative;
+  left: 35%;
+  width: 30%;
+}
+.favorite .container .row .col .card-note {
+  text-align: center;
+}
+.favorite .container .row .col .card-note h4 {
+  font-weight: bold;
+}
+.favorite .container .row .col .card-note p {
+  color: gray;
+}
+.favorite .container .row .col .card-note a {
+  border: 1px solid blue;
+  padding: 8px 20px;
+  background-color: white;
+  color: black;
+  transition: all 1s linear;
+  font-weight: bold;
+  font-size: 10px;
+}
+.favorite .container .row .col .card-note a:hover {
+  color: white;
+  background-color: blue;
+}
+
+.detail .container {
+  padding: 50px 0;
+}
+.detail .container h1 {
+  text-align: center;
+  color: blue;
+  margin-bottom: 20px;
+}
+.detail .container .row .col .card-img {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail .container .row .col .card-img img {
+  position: relative;
+  left: 35%;
+  width: 30%;
+}
+.detail .container .row .col .card-note {
+  text-align: center;
+}
+.detail .container .row .col .card-note h4 {
+  font-weight: bold;
+}
+.detail .container .row .col .card-note p {
+  color: gray;
+}
+.detail .container .row .col .card-note a {
+  border: 1px solid blue;
+  padding: 8px 20px;
+  background-color: white;
+  color: black;
+  transition: all 1s linear;
+  font-weight: bold;
+  font-size: 10px;
+}
+.detail .container .row .col .card-note a:hover {
+  color: white;
+  background-color: blue;
+}
+
+#service {
+  background-image: url("./image/feature-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#service .container {
+  padding: 50px 0;
+}
+#service .container .service-note {
+  text-align: center;
+  padding: 0 10px;
+}
+#service .container .service-note h1 {
+  color: white;
+  font-size: 40px;
+}
+@media only screen and (max-width: 767px) {
+  #service .container .service-note h1 {
+    font-size: 30px;
+  }
+}
+#service .container .service-note p {
+  color: white;
+  font-size: 20px;
+}
+#service .container .row {
+  gap: 20px;
+}
+#service .container .row .col {
+  width: 350px;
+  height: 25vh;
+  gap: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+}
+#service .container .row .col h3 {
+  font-size: 20px;
+  color: black;
+}
+#service .container .row .col h3:hover {
+  color: rgb(102, 102, 163);
+}
+#service .container .row .col p {
+  color: gray;
+}
+@media only screen and (max-width: 992px) {
+  #service .container .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#blog .container {
+  padding: 50px;
+}
+#blog .container .blog-note {
+  text-align: center;
+}
+#blog .container .blog-note h1 {
+  color: black;
+  font-size: 50px;
+}
+@media only screen and (max-width: 992px) {
+  #blog .container .blog-note h1 {
+    font-size: 30px;
+  }
+}
+#blog .container .blog-note p {
+  color: gray;
+  font-size: 20px;
+}
+#blog .container .row .col img {
+  width: 90%;
+}
+@media only screen and (max-width: 767px) {
+  #blog .container .row .col img {
+    width: 80%;
+  }
+}
+#blog .container .row .col a {
+  padding: 8px 20px;
+  background-color: blue;
+  color: white;
+  transition: all 1s linear;
+  font-weight: bold;
+  font-size: 10px;
+}
+#blog .container .row .col a:hover {
+  color: black;
+  background-color: transparent;
+  border: 1px solid blue;
+}
+#blog .container .row .col .blog-item1 {
+  padding-right: 50px;
+}
+#blog .container .row .col .blog-item1 h3 {
+  font-size: 20px;
+  color: black;
+}
+#blog .container .row .col .blog-item1 h3:hover {
+  color: rgb(102, 102, 163);
+}
+#blog .container .row .col .blog-item1 p {
+  color: gray;
+}
+@media only screen and (max-width: 992px) {
+  #blog .container .row .col {
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #blog .container .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+footer {
+  background-color: rgb(88, 85, 102);
+}
+footer .container {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .container ul {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+footer .container ul li a {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  margin: 5px;
+}
+@media only screen and (max-width: 767px) {
+  footer .container ul {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px) {
+  footer .container {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */

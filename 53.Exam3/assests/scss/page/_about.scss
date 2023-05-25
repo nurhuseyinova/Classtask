@@ -1,0 +1,57 @@
+#about {
+  .container {
+    padding: 50px 0;
+    .about-note {
+      text-align: center;
+      h1 {
+        color: black;
+      }
+      p {
+        font-size: 20px;
+        color: rgb(95, 93, 93);
+      }
+    }
+    .search-sort {
+      input {
+        padding: 5px;
+        width: 300px;
+      }
+    }
+
+    .row {
+      .col {
+        .card-img {
+          background-color: white;
+          @include display;
+          img {
+            position: relative;
+            left: 35%;
+            width: 30%;
+          }
+        }
+        .card-note {
+          text-align: center;
+          h4 {
+            font-weight: bold;
+          }
+          p {
+            color: gray;
+          }
+          a {
+            border: 1px solid blue;
+            padding: 8px 20px;
+            background-color: white;
+            color: black;
+            transition: all 1s linear;
+            font-weight: bold;
+            font-size: 10px;
+            &:hover {
+              color: white;
+              background-color: blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+#service {
+  background-image: url("./image/feature-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    padding: 50px 0;
+    .service-note {
+      text-align: center;
+      padding: 0 10px;
+      h1 {
+        color: white;
+        font-size: 40px;
+        @media only screen and (max-width: 767px) {
+          font-size: 30px;
+        }
+      }
+      p {
+        color: white;
+        font-size: 20px;
+      }
+    }
+    .row {
+      gap: 20px;
+      .col {
+        width: 350px;
+        height: 25vh;
+
+        gap: 20px;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: white;
+        h3 {
+          font-size: 20px;
+          color: black;
+          &:hover {
+            color: rgb(102, 102, 163);
+          }
+        }
+        p {
+          color: gray;
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

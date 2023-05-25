@@ -1,0 +1,29 @@
+footer{
+    background-color: rgb(88, 85, 102);
+    .container{
+        // height: 15vh;
+        padding: 10px 0;
+        @include display;
+        ul{
+            padding: 10px;
+            @include display;
+            gap: 10px;
+            li{
+                a{
+                    background-color: black;
+                    padding: 10px;
+                    color: white;
+                    margin: 5px;
+                }
+            }
+            @media only screen and (max-width:767px) {
+                flex-direction: column;
+                
+               }
+        }
+        @media only screen and (max-width:767px) {
+          flex-direction: column;
+         
+         }
+    }
+}

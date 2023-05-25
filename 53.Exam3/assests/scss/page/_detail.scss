@@ -1,0 +1,45 @@
+.detail {
+  .container {
+    padding: 50px 0;
+    h1 {
+      text-align: center;
+      color: blue;
+      margin-bottom: 20px;
+    }
+    .row {
+      .col {
+        .card-img {
+          background-color: white;
+          @include display;
+          img {
+            position: relative;
+            left: 35%;
+            width: 30%;
+          }
+        }
+        .card-note {
+          text-align: center;
+          h4 {
+            font-weight: bold;
+          }
+          p {
+            color: gray;
+          }
+          a {
+            border: 1px solid blue;
+            padding: 8px 20px;
+            background-color: white;
+            color: black;
+            transition: all 1s linear;
+            font-weight: bold;
+            font-size: 10px;
+            &:hover {
+              color: white;
+              background-color: blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
