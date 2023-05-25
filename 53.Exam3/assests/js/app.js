@@ -39,6 +39,7 @@ async function getData(){
                         <button onclick=deleteBtn("${element.id}") class="btn btn-danger" >Delete</button>
                         <button onclick=addFavData("${element.id}") class="btn btn-warning" >Basket</button><br><br>
                         <a href="./deatail.html?id=${element.id}">Detail</a>
+                        <a href="./form.html?id=${element.id}">Edit Info</a>
           
                     </div>
             </div>`

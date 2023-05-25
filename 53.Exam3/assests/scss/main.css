@@ -136,9 +136,11 @@ header .container nav .fa-bars {
 }
 #about .container .row .col .card-note h4 {
   font-weight: bold;
+  text-transform: capitalize;
 }
 #about .container .row .col .card-note p {
   color: gray;
+  text-transform: capitalize;
 }
 #about .container .row .col .card-note a {
   border: 1px solid blue;
@@ -194,6 +196,15 @@ header .container nav .fa-bars {
 .favorite .container .row .col .card-note a:hover {
   color: white;
   background-color: blue;
+}
+
+.form-page .container {
+  padding: 50px 0;
+}
+.form-page .container h1 {
+  text-align: center;
+  color: blue;
+  margin-bottom: 20px;
 }
 
 .detail .container {
