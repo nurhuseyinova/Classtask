@@ -1,0 +1,38 @@
+#schedule {
+  background-image: url("./image/callto-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .schedulePage {
+    background-color: rgba(0, 0, 0,0.5);
+    .herroBanner {
+      padding: 120px 0;
+      .scheduleNote {
+        text-align: center;
+        color: white;
+        padding: 0 200px;
+        
+        p {
+          font-size: 14px;
+        }
+        a {
+          color: white;
+          border: 1px solid $color-pink;
+          background-color: $color-pink;
+          transition: all linear 0.5s;
+          padding: 5px 20px;
+          border-radius: 20px;
+         
+          &:hover {
+            background-color: transparent;
+            border-color: white;
+          }
+        }
+    @media only screen and (max-width: 767px) {
+
+        padding: 0 30px;
+    }
+      }
+    }
+  }
+}

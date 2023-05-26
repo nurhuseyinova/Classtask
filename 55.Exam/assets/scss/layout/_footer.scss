@@ -1,0 +1,27 @@
+footer {
+  padding-top: 20px;
+  background-color: $color-pink;
+  .herroBanner {
+    padding:0 50px;
+    @include display;
+
+    ul {
+      @include display;
+      gap: 20px;
+      li {
+        a {
+          color: white;
+          padding: 10px;
+          background-color: rgb(88, 69, 69);
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      justify-content: center;
+      flex-direction: column;
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+}

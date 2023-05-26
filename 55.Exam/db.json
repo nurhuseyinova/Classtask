@@ -1,0 +1,55 @@
+{
+  "data": [
+    {
+      "title": "Nur Exercise",
+      "id": 1,
+      "photo": "./assets/scss/image/o1.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+      "price": 1500
+    },
+    {
+      "title": "nur",
+      "id": 3,
+      "photo": "./assets/scss/image/o2.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+      "price": 4500
+    },
+    {
+      "title": "Regular Exercise",
+      "id": 2,
+      "photo": "./assets/scss/image/o3.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+      "price": 1750
+    },
+    {
+      "title": " Ulfet",
+      "id": 4,
+      "photo": "./assets/scss/image/o1.png",
+      "info": "Lorem ipsum dolor si",
+      "price": "1000000"
+    },
+    {
+      "title": "Anim voluptates ipsa",
+      "info": "Itaque cumque debiti",
+      "price": "860",
+      "photo": "./assets/scss/image/o3.png",
+      "id": 5
+    }
+  ],
+  "basket": [
+    {
+      "title": "nur",
+      "id": 3,
+      "photo": "./assets/scss/image/o2.png",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+      "price": 4500
+    },
+    {
+      "title": "Anim voluptates ipsa",
+      "info": "Itaque cumque debiti",
+      "price": "860",
+      "photo": "./assets/scss/image/o3.png",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+#course {
+  .herroBanner {
+    padding: 100px 50px;
+    .courseNote {
+      text-align: center;
+      h3 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 14px;
+        color: gray;
+      }
+    }
+    .row {@include display;
+        justify-content: center;
+      .col {
+          width: 350px;
+          overflow:hidden;
+        .courseItem {
+          height: 40vh;
+           background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          padding: 20px;
+          display: flex;
+          align-items: end;
+          transition: all linear 0.5s;
+          
+          &:hover {
+            transform: scale(1,1.1);
+          }
+          a {
+            padding: 10px 20px;
+            color: white;
+            background-color: $color-pink;
+          }
+
+          
+        }
+        .img1{
+            background-image: url("./image/c1.jpg");
+    
+        }
+        .img2{
+            background-image: url("./image/c2.jpg");
+    
+        }
+        .img3{
+            background-image: url("./image/c3.jpg");
+    
+        }
+        .img4{
+            background-image: url("./image/c4.jpg");
+    
+        }
+        .img5{
+            background-image: url("./image/c5.jpg");
+    
+        }
+        .img6{
+            background-image: url("./image/c6.jpg");
+    
+        }
+        .itemNote {
+          @include display;
+          h4{
+            font-size: 18px;
+          }
+          h5{
+            color: $color-pink;
+            border: 1px solid $color-pink;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

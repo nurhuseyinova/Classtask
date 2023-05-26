@@ -1,0 +1,77 @@
+#offer {
+    background-image: radial-gradient(rgb(243, 200, 207),white);
+  .herroBanner {
+    padding: 60px;
+    .offerNote {
+        text-align: center;
+      h3 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 14px;
+        color: gray
+      }
+    }
+    .searchSort{
+        @include display;
+        justify-content: center;
+        gap: 10px;
+        input{
+            padding: 5px;
+            width: 200px
+        }
+        button{
+            color: white;
+            background-image: linear-gradient( to right,red,blue);
+            border: none;
+            padding: 5px 15px;
+
+        }
+
+
+    }
+    .row{
+        @include display;
+        justify-content: center;
+        .col{
+            background-color: white;
+            width: 300px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            text-align: center;
+            height: 60vh;
+            text-transform: capitalize;
+            img{
+
+                margin-bottom: 20px;
+
+            }
+            h5{
+                font-weight: bold;
+
+            }
+            p{
+                color: gray;
+                font-size: 14px;
+            }
+            a{
+                background-image: linear-gradient( to right,violet,blue);
+
+                border: 1px solid rgb(247, 112, 112);
+                color: white;
+                padding: 5px 10px;
+                
+                
+            }
+            button{
+                color: white;
+                background-image: linear-gradient( to right,red,blue);
+                border: none;
+                padding: 5px 15px;
+
+            }
+        }
+    }
+  }
+}

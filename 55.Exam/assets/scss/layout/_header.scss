@@ -1,0 +1,96 @@
+header {background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  .herroBanner {
+    padding:0 50px;
+    .headerTop {
+      @include display;
+      height: 15vh;
+      h4 {
+        font-size: 14px;
+
+        color: black;
+        @media only screen and (max-width: 992px) {
+            display: none;
+          }
+      }
+
+      a {
+        span {
+          color: black;
+        }
+        i {
+          color: white;
+          background-color: $color-pink;
+          padding: 40px;
+          font-size: 20px
+        }
+        @media only screen and (max-width: 992px) {
+            display: none;
+          }
+      }
+      .fa-bars{
+        color: black;
+        font-size: 20px;
+        display: none;
+        @media only screen and (max-width: 992px) {
+            display: block;
+          }
+
+      }
+    }
+    .headerBottum {
+      nav {
+        .head {
+          @include display;
+          justify-content: center;
+          gap: 20px;
+          height: 10vh;
+          li {
+            .headItem {
+              font-size: 12px;
+              border: 1px solid $color-pink;
+
+              text-transform: uppercase;
+              padding: 5px 15px;
+              color: black;
+              &:hover{
+                color: $color-pink;
+              }
+
+              .dropdown-menu {
+                a {
+                  border: none !important;
+                }
+              }
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        display: none;
+        &.show{height: 70vh;
+            display: block;
+            width: 300px;
+            background-color: black;
+            nav{
+                .head{
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    position: relative;
+                    top: 200px;
+                    li{
+                        .headItem{
+                            color: white;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+      }
+    }
+  }
+}

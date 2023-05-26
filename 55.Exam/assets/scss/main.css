@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.herroBanner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+header .herroBanner {
+  padding: 0 50px;
+}
+header .herroBanner .headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+header .herroBanner .headerTop h4 {
+  font-size: 14px;
+  color: black;
+}
+@media only screen and (max-width: 992px) {
+  header .herroBanner .headerTop h4 {
+    display: none;
+  }
+}
+header .herroBanner .headerTop a span {
+  color: black;
+}
+header .herroBanner .headerTop a i {
+  color: white;
+  background-color: rgb(236, 52, 82);
+  padding: 40px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 992px) {
+  header .herroBanner .headerTop a {
+    display: none;
+  }
+}
+header .herroBanner .headerTop .fa-bars {
+  color: black;
+  font-size: 20px;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  header .herroBanner .headerTop .fa-bars {
+    display: block;
+  }
+}
+header .herroBanner .headerBottum nav .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
+  height: 10vh;
+}
+header .herroBanner .headerBottum nav .head li .headItem {
+  font-size: 12px;
+  border: 1px solid rgb(236, 52, 82);
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: black;
+}
+header .herroBanner .headerBottum nav .head li .headItem:hover {
+  color: rgb(236, 52, 82);
+}
+header .herroBanner .headerBottum nav .head li .headItem .dropdown-menu a {
+  border: none !important;
+}
+@media only screen and (max-width: 992px) {
+  header .herroBanner .headerBottum {
+    display: none;
+  }
+  header .herroBanner .headerBottum.show {
+    height: 70vh;
+    display: block;
+    width: 300px;
+    background-color: black;
+  }
+  header .herroBanner .headerBottum.show nav .head {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    position: relative;
+    top: 200px;
+  }
+  header .herroBanner .headerBottum.show nav .head li .headItem {
+    color: white;
+    border: none;
+  }
+}
+
+#home {
+  background-image: url("./image/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#home .homePage {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#home .homePage .herroBanner {
+  padding: 200px 260px;
+  text-align: center;
+  color: white;
+}
+#home .homePage .herroBanner h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  #home .homePage .herroBanner h1 {
+    font-size: 30px;
+  }
+}
+#home .homePage .herroBanner p {
+  font-size: 14px;
+}
+@media only screen and (max-width: 767px) {
+  #home .homePage .herroBanner {
+    padding: 250px 30px;
+  }
+}
+
+#course .herroBanner {
+  padding: 100px 50px;
+}
+#course .herroBanner .courseNote {
+  text-align: center;
+}
+#course .herroBanner .courseNote h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+#course .herroBanner .courseNote p {
+  font-size: 14px;
+  color: gray;
+}
+#course .herroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+#course .herroBanner .row .col {
+  width: 350px;
+  overflow: hidden;
+}
+#course .herroBanner .row .col .courseItem {
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  display: flex;
+  align-items: end;
+  transition: all linear 0.5s;
+}
+#course .herroBanner .row .col .courseItem:hover {
+  transform: scale(1, 1.1);
+}
+#course .herroBanner .row .col .courseItem a {
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(236, 52, 82);
+}
+#course .herroBanner .row .col .img1 {
+  background-image: url("./image/c1.jpg");
+}
+#course .herroBanner .row .col .img2 {
+  background-image: url("./image/c2.jpg");
+}
+#course .herroBanner .row .col .img3 {
+  background-image: url("./image/c3.jpg");
+}
+#course .herroBanner .row .col .img4 {
+  background-image: url("./image/c4.jpg");
+}
+#course .herroBanner .row .col .img5 {
+  background-image: url("./image/c5.jpg");
+}
+#course .herroBanner .row .col .img6 {
+  background-image: url("./image/c6.jpg");
+}
+#course .herroBanner .row .col .itemNote {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#course .herroBanner .row .col .itemNote h4 {
+  font-size: 18px;
+}
+#course .herroBanner .row .col .itemNote h5 {
+  color: rgb(236, 52, 82);
+  border: 1px solid rgb(236, 52, 82);
+  font-size: 18px;
+}
+
+#schedule {
+  background-image: url("./image/callto-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#schedule .schedulePage {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#schedule .schedulePage .herroBanner {
+  padding: 120px 0;
+}
+#schedule .schedulePage .herroBanner .scheduleNote {
+  text-align: center;
+  color: white;
+  padding: 0 200px;
+}
+#schedule .schedulePage .herroBanner .scheduleNote p {
+  font-size: 14px;
+}
+#schedule .schedulePage .herroBanner .scheduleNote a {
+  color: white;
+  border: 1px solid rgb(236, 52, 82);
+  background-color: rgb(236, 52, 82);
+  transition: all linear 0.5s;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+#schedule .schedulePage .herroBanner .scheduleNote a:hover {
+  background-color: transparent;
+  border-color: white;
+}
+@media only screen and (max-width: 767px) {
+  #schedule .schedulePage .herroBanner .scheduleNote {
+    padding: 0 30px;
+  }
+}
+
+#offer {
+  background-image: radial-gradient(rgb(243, 200, 207), white);
+}
+#offer .herroBanner {
+  padding: 60px;
+}
+#offer .herroBanner .offerNote {
+  text-align: center;
+}
+#offer .herroBanner .offerNote h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+#offer .herroBanner .offerNote p {
+  font-size: 14px;
+  color: gray;
+}
+#offer .herroBanner .searchSort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
+}
+#offer .herroBanner .searchSort input {
+  padding: 5px;
+  width: 200px;
+}
+#offer .herroBanner .searchSort button {
+  color: white;
+  background-image: linear-gradient(to right, red, blue);
+  border: none;
+  padding: 5px 15px;
+}
+#offer .herroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+#offer .herroBanner .row .col {
+  background-color: white;
+  width: 300px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+  height: 60vh;
+  text-transform: capitalize;
+}
+#offer .herroBanner .row .col img {
+  margin-bottom: 20px;
+}
+#offer .herroBanner .row .col h5 {
+  font-weight: bold;
+}
+#offer .herroBanner .row .col p {
+  color: gray;
+  font-size: 14px;
+}
+#offer .herroBanner .row .col a {
+  background-image: linear-gradient(to right, violet, blue);
+  border: 1px solid rgb(247, 112, 112);
+  color: white;
+  padding: 5px 10px;
+}
+#offer .herroBanner .row .col button {
+  color: white;
+  background-image: linear-gradient(to right, red, blue);
+  border: none;
+  padding: 5px 15px;
+}
+
+footer {
+  padding-top: 20px;
+  background-color: rgb(236, 52, 82);
+}
+footer .herroBanner {
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .herroBanner ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+footer .herroBanner ul li a {
+  color: white;
+  padding: 10px;
+  background-color: rgb(88, 69, 69);
+}
+@media only screen and (max-width: 767px) {
+  footer .herroBanner {
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer .herroBanner ul {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
