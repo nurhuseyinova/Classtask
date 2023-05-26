@@ -1,0 +1,86 @@
+{
+  "data": [
+    {
+      "title": "Bar",
+      "email": "bb@nn",
+      "id": 1,
+      "phone": "+1288383",
+      "adddress": "Shamkir",
+      "price": 1300
+    },
+    {
+      "title": "Nurlana",
+      "email": "bb@nn",
+      "id": 2,
+      "phone": "+1288383",
+      "adddress": "Shamkir",
+      "price": "1500"
+    },
+    {
+      "title": "Nur",
+      "email": "bb@nn",
+      "id": 3,
+      "phone": "+1288383",
+      "adddress": "Shamkir",
+      "price": "1000"
+    },
+    {
+      "title": "Nuray",
+      "email": "bb@nn",
+      "id": 4,
+      "phone": "+1288383",
+      "adddress": "Shamkir",
+      "price": 500
+    },
+    {
+      "title": "Nurlan",
+      "email": "bb@nn",
+      "id": 5,
+      "phone": "+1288383",
+      "adddress": "Shamkir",
+      "price": 1566
+    },
+    {
+      "title": "Eum sit Nam ducimus",
+      "adddress": "Aut labore architect",
+      "email": "bozoqy@mailinator.com",
+      "phone": "+1 (183) 377-4888",
+      "price": "479",
+      "id": 6
+    }
+  ],
+  "basket": [
+    {
+      "title": "Nur",
+      "email": "bb@nn",
+      "id": 2,
+      "phone": "+1288383",
+      "adddress": "Shamkir",
+      "price": 1500
+    },
+    {
+      "title": "Bar",
+      "email": "bb@nn",
+      "id": 1,
+      "phone": "+1288383",
+      "adddress": "Shamkir",
+      "price": 1300
+    },
+    {
+      "title": "Eum sit Nam ducimus",
+      "adddress": "Aut labore architect",
+      "email": "bozoqy@mailinator.com",
+      "phone": "+1 (183) 377-4888",
+      "price": "479",
+      "id": 6
+    },
+    {
+      "title": "Nur",
+      "email": "bb@nn",
+      "id": 3,
+      "phone": "+1288383",
+      "adddress": "Shamkir",
+      "price": "1000"
+    }
+  ]
+}

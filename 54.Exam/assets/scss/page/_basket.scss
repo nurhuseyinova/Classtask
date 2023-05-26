@@ -1,0 +1,40 @@
+.basket{
+    .heroBanner{
+        padding: 50px 100px;
+        h1{
+            text-align: center;
+            color: $color-green;
+        }
+        .row {display: flex;
+            align-items: center;
+            justify-content: center;
+            .col {
+              width: 300px;
+              padding: 30px;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              color: $color-green;
+              @media only screen and (max-width: 767px) {
+                width: 100%;
+              }
+      
+              .item1Note1 {
+                text-align: center;
+                font-size: 30px;
+              }
+              .item1Note3 {
+                font-family: "Playfair Display", serif;
+              }
+            }
+            .item1 {
+              background-image: url("./image/background1\ \(1\).jpg");
+            }
+            
+          }
+          @media only screen and (max-width:992px) {
+            padding: 50px;
+               }
+    }
+
+}

@@ -1,0 +1,75 @@
+#about{
+    // width: 50%;
+    background-image: url("./image/gallery1\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    .heroBanner{
+        .aboutSec{
+            padding: 50px 150px;
+            .item1{
+                padding: 100px;
+                background-color:  $color-green;
+                .aboutNote1{
+                    color: white;
+                    font-size: 50px;
+                    
+                }
+                .aboutNote2{
+                    color: white;
+
+                }
+                a{
+                    color: $color-green;
+                    background-color: white;
+                    padding: 10px 20px ;
+
+                }
+                @media only screen and (max-width:992px) {
+                    padding: 20px;
+                }
+
+            }
+            .item2{
+                // height: 60vh;
+                width: 50%;
+                background-image: url("./image/b4\ \(1\).jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .item3{
+                display: flex;
+            align-items: center;
+            justify-content: center;
+                .col{
+                    .itemNote{
+                        display: flex;
+                        gap: 20px;
+                        i{
+                            margin-top: 10px;
+                            font-size: 30px;
+                            color: $color-green;
+                        }
+                        p{
+                            font-size: 30px;
+                        color: $color-green;
+
+                        
+                        }
+                    }
+                    p{
+                        font-size: 15px;
+                        color: $color-green;
+                    }
+
+                }
+
+            }
+            @media only screen and (max-width:992px) {
+         padding: 50px;
+            }
+        }
+    }
+}

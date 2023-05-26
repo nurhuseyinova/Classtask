@@ -1,0 +1,56 @@
+header{
+
+   background-color: rgba(30, 70, 30, 0.6);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    .heroBanner{
+        nav{
+            height: 10vh;
+            @include display;
+            h3{
+                color: white;
+                font-weight: bold;
+                font-size: 20px
+
+            }
+            ul{
+                @include display;
+                gap: 15px;
+                li{
+                    a{
+                        color: rgb(184, 184, 184);
+                        font-weight: bold;
+
+                    }
+                }
+                @media only screen and (max-width:992px) {
+                    display: none;
+                }
+            }
+            i{
+                font-size: 20px;
+                color: white;
+                display: none;
+                @media only screen and (max-width:992px) {
+                    display: block;
+                }
+            }
+            @media only screen and (max-width:992px) {
+                &.show{
+                    height: 50vh;
+                    align-items: start;
+                    padding-top: 30px;
+                    ul{
+                        display: block;
+                        position: relative;
+                      right: 80px;
+                        top: 100px;
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heroBanner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 992px) {
+  .heroBanner {
+    padding: 0 5%;
+  }
+}
+
+header {
+  background-color: rgba(30, 70, 30, 0.6);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+header .heroBanner nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .heroBanner nav h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+header .heroBanner nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+header .heroBanner nav ul li a {
+  color: rgb(184, 184, 184);
+  font-weight: bold;
+}
+@media only screen and (max-width: 992px) {
+  header .heroBanner nav ul {
+    display: none;
+  }
+}
+header .heroBanner nav i {
+  font-size: 20px;
+  color: white;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  header .heroBanner nav i {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header .heroBanner nav.show {
+    height: 50vh;
+    align-items: start;
+    padding-top: 30px;
+  }
+  header .heroBanner nav.show ul {
+    display: block;
+    position: relative;
+    right: 80px;
+    top: 100px;
+  }
+}
+
+#home img {
+  height: 100vh;
+}
+#home .carousel-caption {
+  top: 30%;
+}
+#home .carousel-caption .col {
+  text-align: center;
+}
+#home .carousel-caption .col p {
+  color: rgb(39, 90, 47);
+}
+#home .carousel-caption .col .carouselNote1 {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+#home .carousel-caption .col .carouselNote2 {
+  font-size: 40px;
+}
+
+#about {
+  background-image: url("./image/gallery1 (1).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#about .heroBanner .aboutSec {
+  padding: 50px 150px;
+}
+#about .heroBanner .aboutSec .item1 {
+  padding: 100px;
+  background-color: rgb(39, 90, 47);
+}
+#about .heroBanner .aboutSec .item1 .aboutNote1 {
+  color: white;
+  font-size: 50px;
+}
+#about .heroBanner .aboutSec .item1 .aboutNote2 {
+  color: white;
+}
+#about .heroBanner .aboutSec .item1 a {
+  color: rgb(39, 90, 47);
+  background-color: white;
+  padding: 10px 20px;
+}
+@media only screen and (max-width: 992px) {
+  #about .heroBanner .aboutSec .item1 {
+    padding: 20px;
+  }
+}
+#about .heroBanner .aboutSec .item2 {
+  width: 50%;
+  background-image: url("./image/b4 (1).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#about .heroBanner .aboutSec .item3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .heroBanner .aboutSec .item3 .col .itemNote {
+  display: flex;
+  gap: 20px;
+}
+#about .heroBanner .aboutSec .item3 .col .itemNote i {
+  margin-top: 10px;
+  font-size: 30px;
+  color: rgb(39, 90, 47);
+}
+#about .heroBanner .aboutSec .item3 .col .itemNote p {
+  font-size: 30px;
+  color: rgb(39, 90, 47);
+}
+#about .heroBanner .aboutSec .item3 .col p {
+  font-size: 15px;
+  color: rgb(39, 90, 47);
+}
+@media only screen and (max-width: 992px) {
+  #about .heroBanner .aboutSec {
+    padding: 50px;
+  }
+}
+
+.basket .heroBanner {
+  padding: 50px 100px;
+}
+.basket .heroBanner h1 {
+  text-align: center;
+  color: rgb(39, 90, 47);
+}
+.basket .heroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.basket .heroBanner .row .col {
+  width: 300px;
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(39, 90, 47);
+}
+@media only screen and (max-width: 767px) {
+  .basket .heroBanner .row .col {
+    width: 100%;
+  }
+}
+.basket .heroBanner .row .col .item1Note1 {
+  text-align: center;
+  font-size: 30px;
+}
+.basket .heroBanner .row .col .item1Note3 {
+  font-family: "Playfair Display", serif;
+}
+.basket .heroBanner .row .item1 {
+  background-image: url("./image/background1 (1).jpg");
+}
+@media only screen and (max-width: 992px) {
+  .basket .heroBanner {
+    padding: 50px;
+  }
+}
+
+#portfolio {
+  background-image: url("./image/background1 (1).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#portfolio .heroBanner {
+  padding: 50px 0;
+}
+#portfolio .heroBanner .portfolioNote {
+  text-align: center;
+}
+#portfolio .heroBanner .portfolioNote .note1 {
+  font-size: 20px;
+  color: rgb(39, 90, 47);
+}
+#portfolio .heroBanner .portfolioNote .note2 {
+  font-size: 40px;
+  color: rgb(39, 90, 47);
+}
+#portfolio .heroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+}
+#portfolio .heroBanner .row .col {
+  height: 50vh;
+  gap: 10px;
+  width: 30%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 767px) {
+  #portfolio .heroBanner .row .col {
+    width: 100%;
+  }
+}
+#portfolio .heroBanner .row .item1 {
+  text-align: center;
+  padding-top: 50px;
+  background-color: rgba(90, 90, 194, 0.4);
+}
+#portfolio .heroBanner .row .item1 i {
+  color: rgb(39, 90, 47);
+  font-size: 40px;
+}
+#portfolio .heroBanner .row .item1 .item1Note1 {
+  color: rgb(39, 90, 47);
+  font-size: 30px;
+}
+#portfolio .heroBanner .row .item1 .item1Note2 {
+  color: rgb(39, 90, 47);
+  font-size: 15px;
+}
+#portfolio .heroBanner .row .item1 a {
+  color: rgb(39, 90, 47);
+  padding: 10px 20px;
+}
+#portfolio .heroBanner .row .item1 a:hover {
+  background-color: rgb(230, 228, 228);
+}
+#portfolio .heroBanner .row .item2 {
+  background-image: url("./image/b4 (1).jpg");
+}
+#portfolio .heroBanner .row .item3 {
+  background-image: url("./image/b2 (2).jpg");
+}
+#portfolio .heroBanner .row .item4 {
+  background-image: url("./image/b3 (1).jpg");
+}
+#portfolio .heroBanner .row .item5 {
+  background-image: url("./image/b4 (1).jpg");
+}
+#portfolio .heroBanner .row .item6 {
+  background-image: url("./image/b3 (1).jpg");
+}
+@media only screen and (max-width: 992px) {
+  #portfolio .heroBanner .row {
+    padding: 50px;
+  }
+}
+
+#contact .heroBanner {
+  padding: 50px 100px;
+}
+#contact .heroBanner .contactNote {
+  text-align: center;
+}
+#contact .heroBanner .contactNote .note1 {
+  font-size: 20px;
+  color: rgb(39, 90, 47);
+}
+#contact .heroBanner .contactNote .note2 {
+  font-size: 40px;
+  color: rgb(39, 90, 47);
+}
+#contact .heroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact .heroBanner .row .col {
+  width: 300px;
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(39, 90, 47);
+}
+#contact .heroBanner .row .col .item1Note1 {
+  text-align: center;
+  font-size: 30px;
+}
+#contact .heroBanner .row .col .item1Note3 {
+  font-family: "Playfair Display", serif;
+}
+#contact .heroBanner .row .item1 {
+  background-image: url("./image/background1 (1).jpg");
+}
+@media only screen and (max-width: 992px) {
+  #contact .heroBanner {
+    padding: 50px;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(39, 90, 47);
+  color: white;
+  padding: 10px;
+}
+footer i {
+  color: white;
+}/*# sourceMappingURL=main.css.map */

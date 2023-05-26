@@ -1,0 +1,21 @@
+#home {
+  img {
+    height: 100vh;
+  }
+  .carousel-caption {
+    top: 30%;
+    .col {
+      text-align: center;
+      p {
+        color: $color-green;
+      }
+      .carouselNote1 {
+        font-size: 20px;
+        font-family: "Playfair Display", serif;
+      }
+      .carouselNote2 {
+        font-size: 40px;
+      }
+    }
+  }
+}
