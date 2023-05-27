@@ -36,20 +36,5 @@
       "id": 5
     }
   ],
-  "basket": [
-    {
-      "title": "nur",
-      "id": 3,
-      "photo": "./assets/scss/image/o2.png",
-      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      "price": 4500
-    },
-    {
-      "title": "Anim voluptates ipsa",
-      "info": "Itaque cumque debiti",
-      "price": "860",
-      "photo": "./assets/scss/image/o3.png",
-      "id": 5
-    }
-  ]
+  "basket": []
 }

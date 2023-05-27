@@ -28,6 +28,10 @@
             padding: 5px 15px;
 
         }
+        @media only screen and (max-width: 767px) {
+
+           flex-direction: column;
+        }
 
 
     }
