@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.herroBanner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .headerTop {
+  padding: 0 100px;
+  background-color: brown;
+}
+header .headerTop nav {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+header .headerTop nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+header .headerTop nav ul li a {
+  color: black;
+}
+header .headerTop nav ul li a:hover {
+  color: white;
+}
+header .headerTop nav ul .topItem1 {
+  padding: 17px;
+}
+header .headerTop nav ul .topItem1:hover {
+  background-color: red;
+}
+header .headerTop nav ul .topItem2 {
+  padding: 17px;
+  background-color: yellow;
+}
+@media only screen and (max-width: 556px) {
+  header .headerTop {
+    height: 10vh;
+  }
+  header .headerTop nav {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .headerTop {
+    padding: 0 20px;
+  }
+}
+header .headerBottum {
+  padding: 0 100px;
+}
+header .headerBottum nav {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .headerBottum nav p {
+  margin-left: 20px;
+  font-size: 20px;
+}
+header .headerBottum nav .bottumItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+header .headerBottum nav .bottumItem li a {
+  color: gray;
+}
+header .headerBottum nav .bottumItem li a:hover {
+  color: black;
+}
+header .headerBottum nav .bottumItem li a .dropdownItem {
+  color: gray;
+}
+header .headerBottum nav .bottumItem li a .dropdownItem:hover {
+  color: black;
+}
+header .headerBottum nav .bottumItem li a .dropdown-menu li a {
+  color: black;
+}
+@media only screen and (max-width: 992px) {
+  header .headerBottum nav .bottumItem {
+    display: none;
+  }
+}
+header .headerBottum nav .fa-bars {
+  color: black;
+  font-size: 20px;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  header .headerBottum nav .fa-bars {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header .headerBottum nav.show {
+    height: 100vh;
+    justify-content: flex-start;
+  }
+  header .headerBottum nav.show .bottumItem {
+    position: relative;
+    top: 100px;
+    right: 50%;
+    flex-direction: column !important;
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .headerBottum {
+    padding: 0 20px;
+  }
+}
+
+#home img {
+  height: 100vh;
+}
+#home .carousel-caption {
+  top: 25%;
+}
+#home .carousel-caption .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+#home .carousel-caption .row .col {
+  text-align: left;
+}
+#home .carousel-caption .row .col .noteItem1 {
+  font-size: 30px;
+  font-family: "Sacramento", cursive;
+}
+#home .carousel-caption .row .col .noteItem2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#home .carousel-caption .row .col .noteItem3 {
+  font-size: 15px;
+}
+#home .carousel-caption .row .col a {
+  background-color: brown;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+}
+#home .carousel-caption .row .col a:hover {
+  opacity: 0.5;
+}
+#home .carousel-caption .row .homeItem1 {
+  color: black;
+}
+
+#adopt .herroBanner {
+  padding: 50px 130px;
+}
+#adopt .herroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+#adopt .herroBanner .row .col img {
+  width: 100%;
+}
+#adopt .herroBanner .row .col .adoptNote {
+  font-size: 30px;
+  color: black;
+}
+#adopt .herroBanner .row .col p {
+  color: gray;
+}
+#adopt .herroBanner .row .col a {
+  color: brown;
+  border: 2px solid brown;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: linear 0.5s;
+}
+#adopt .herroBanner .row .col a:hover {
+  background-color: brown;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  #adopt .herroBanner {
+    padding: 50px 30px;
+  }
+}
+
+#children .herroBanner {
+  padding: 50px 100px;
+}
+#children .herroBanner .childrenNote {
+  padding: 0 200px;
+  text-align: center;
+}
+#children .herroBanner .childrenNote .note1 {
+  font-size: 30px;
+}
+#children .herroBanner .childrenNote .note2 {
+  color: gray;
+}
+#children .herroBanner .childrenNote a {
+  background-color: brown;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+}
+#children .herroBanner .childrenNote a:hover {
+  opacity: 0.5;
+}
+@media only screen and (max-width: 992px) {
+  #children .herroBanner .childrenNote {
+    padding: 0px 20px;
+  }
+}
+#children .herroBanner .searchSortMore {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#children .herroBanner .searchSortMore #search {
+  padding: 10px;
+  width: 230px;
+}
+#children .herroBanner .searchSortMore button {
+  border-radius: 8px;
+  padding: 5px;
+  width: 230px;
+  color: white;
+  background-color: brown;
+  border: none;
+}
+#children .herroBanner .searchSortMore button:hover {
+  opacity: 0.5;
+}
+#children .herroBanner .searchSortMore a {
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px;
+  width: 230px;
+  color: white;
+  background-color: brown;
+  border: none;
+}
+#children .herroBanner .searchSortMore a:hover {
+  opacity: 0.5;
+}
+#children .herroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+#children .herroBanner .row .col {
+  width: 325px;
+}
+#children .herroBanner .row .col .childrenImg {
+  overflow: hidden;
+}
+#children .herroBanner .row .col .childrenImg .imageItem {
+  margin: 0;
+  transition: linear 0.3s;
+}
+#children .herroBanner .row .col .childrenImg .imageItem:hover {
+  transform: scale(1.2);
+}
+#children .herroBanner .row .col .childrenImg .imageItem img {
+  width: 100%;
+}
+#children .herroBanner .row .col .cardNote {
+  text-transform: capitalize;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+#children .herroBanner .row .col .cardNote span {
+  text-transform: lowercase;
+}
+@media only screen and (max-width: 767px) {
+  #children .herroBanner {
+    padding: 50px 20px;
+  }
+}
+
+#stories .herroBanner {
+  padding: 50px 100px;
+}
+#stories .herroBanner p {
+  text-align: center;
+  font-size: 30px;
+}
+#stories .herroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+#stories .herroBanner .row .col {
+  overflow: hidden;
+}
+#stories .herroBanner .row .col .storiesImg {
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: linear 0.3s;
+}
+#stories .herroBanner .row .col .storiesImg:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+#stories .herroBanner .row .col .img1 {
+  background-image: url("./image/work_thumb_1 (1).jpg");
+}
+#stories .herroBanner .row .col .img2 {
+  background-image: url("./image/work_thumb_2 (1).jpg");
+}
+#stories .herroBanner .row .col .img3 {
+  background-image: url("./image/work_thumb_3 (1).jpg");
+}
+@media only screen and (max-width: 767px) {
+  #stories .herroBanner {
+    padding: 50px 20px;
+  }
+}
+
+footer {
+  height: 8vh;
+  background-color: brown;
+}
+footer .herroBanner {
+  text-align: center;
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */

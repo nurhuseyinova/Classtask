@@ -1,0 +1,105 @@
+header {
+  .headerTop {
+    padding: 0 100px;
+    background-color: $color-brown;
+    nav {
+      height: 8vh;
+      @include display;
+      padding-top: 5px;
+      ul {
+        @include display;
+        gap: 20px;
+        li {
+          a {
+            color: black;
+            &:hover {
+              color: white;
+            }
+          }
+        }
+        .topItem1 {
+          padding: 17px;
+          &:hover {
+            background-color: red;
+          }
+        }
+        .topItem2 {
+          padding: 17px;
+          background-color: yellow;
+        }
+      }
+    }
+    @media only screen and (max-width: 556px) {
+      height: 10vh;
+      nav {
+        flex-direction: column;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 0 20px;
+    }
+  }
+  .headerBottum {
+    padding: 0 100px;
+    nav {
+      height: 15vh;
+      @include display;
+      p {
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      .bottumItem {
+        @include display;
+        gap: 20px;
+        li {
+          a {
+            color: gray;
+            &:hover {
+              color: black;
+            }
+            .dropdownItem {
+              color: gray;
+              &:hover {
+                color: black;
+              }
+            }
+            .dropdown-menu {
+              li {
+                a {
+                  color: black;
+                }
+              }
+            }
+          }
+        }
+        @media only screen and (max-width: 992px) {
+          display: none;
+        }
+      }
+      .fa-bars {
+        color: black;
+        font-size: 20px;
+        display: none;
+        @media only screen and (max-width: 992px) {
+          display: block;
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        &.show {
+          height: 100vh;
+          justify-content: flex-start;
+          .bottumItem {
+            position: relative;
+            top: 100px;
+            right: 50%;
+            flex-direction: column !important;
+            display: block;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 0 20px;
+    }
+  }
+}

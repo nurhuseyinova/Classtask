@@ -1,0 +1,41 @@
+#stories {
+  .herroBanner {
+    padding: 50px 100px;
+    p {
+      text-align: center;
+      font-size: 30px;
+    }
+    .row {
+      @include display;
+      justify-content: center;
+      .col {
+        overflow: hidden;
+        .storiesImg {
+          height: 50vh;
+          width: 100%;
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          transition: linear 0.3s;
+          &:hover {
+            transform: scale(1.2);
+            opacity: 0.5;
+          }
+        }
+        .img1 {
+          background-image: url("./image/work_thumb_1\ \(1\).jpg");
+        }
+        .img2 {
+          background-image: url("./image/work_thumb_2\ \(1\).jpg");
+        }
+        .img3 {
+          background-image: url("./image/work_thumb_3\ \(1\).jpg");
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 50px 20px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+#children {
+  .herroBanner {
+    padding: 50px 100px;
+    .childrenNote {
+      padding: 0 200px;
+      text-align: center;
+      .note1 {
+        font-size: 30px;
+      }
+      .note2 {
+        color: gray;
+      }
+      a {
+        background-color: $color-brown;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 5px;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        padding: 0px 20px;
+      }
+    }
+    .searchSortMore {
+      @include display;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      #search {
+        padding: 10px;
+        width: 230px;
+      }
+      button {
+        border-radius: 8px;
+        padding: 5px;
+        width: 230px;
+        color: white;
+        background-color: $color-brown;
+        border: none;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+      a {
+        text-align: center;
+        border-radius: 8px;
+        padding: 5px;
+        width: 230px;
+        color: white;
+        background-color: $color-brown;
+        border: none;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    .row {
+      @include display;
+      justify-content: center;
+      .col {
+        width: 325px;
+        .childrenImg {
+          overflow: hidden;
+          .imageItem {
+            margin: 0;
+            transition: linear 0.3s;
+            &:hover {
+              transform: scale(1.2);
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .cardNote {
+          text-transform: capitalize;
+          padding-top: 20px;
+          padding-left: 20px;
+          span {
+            text-transform: lowercase;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 50px 20px;
+    }
+  }
+}
