@@ -49,7 +49,7 @@ header .headerTop nav ul .topItem2 {
 }
 @media only screen and (max-width: 556px) {
   header .headerTop {
-    height: 10vh;
+    height: 15vh;
   }
   header .headerTop nav {
     flex-direction: column;
