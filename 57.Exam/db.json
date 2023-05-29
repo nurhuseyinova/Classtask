@@ -1,0 +1,85 @@
+{
+  "data": [
+    {
+      "title": "Libero omnis eligend",
+      "info": "Eveniet et ut assum",
+      "price": "573",
+      "photo": "./assets/scss/image/product6.png",
+      "date": "5/28/2023, 8:38:40 PM",
+      "id": 4
+    },
+    {
+      "title": "Veniam modi accusam",
+      "info": "Nihil distinctio Ve",
+      "price": "5",
+      "photo": "./assets/scss/image/product5.png",
+      "date": "5/28/2023, 8:39:43 PM",
+      "id": 5
+    },
+    {
+      "title": "Earum iste rerum vol",
+      "info": "Enim eaque qui autem",
+      "price": "489",
+      "photo": "./assets/scss/image/product8.png",
+      "date": "5/28/2023, 8:46:48 PM",
+      "id": 6
+    },
+    {
+      "title": "Voluptas exercitatio",
+      "info": "Quidem odit dolor am",
+      "price": "838",
+      "photo": "./assets/scss/image/product1.png",
+      "date": "5/28/2023, 8:47:03 PM",
+      "id": 7
+    },
+    {
+      "title": "Inventore Nam dicta ",
+      "info": "Aperiam sint minima ",
+      "price": "654",
+      "photo": "./assets/scss/image/product5.png",
+      "date": "5/28/2023, 8:48:23 PM",
+      "id": 8
+    },
+    {
+      "title": "Tempora minima conse",
+      "info": "Voluptatum tenetur q",
+      "price": "534",
+      "photo": "./assets/scss/image/product2.png",
+      "date": "5/28/2023, 8:48:35 PM",
+      "id": 9
+    },
+    {
+      "title": "Dolores dolore est d",
+      "info": "Dolore nihil aliquip",
+      "price": "357",
+      "photo": "./assets/scss/image/product7.png",
+      "date": "5/28/2023, 8:49:59 PM",
+      "id": 10
+    },
+    {
+      "title": "Amet rerum quia nis",
+      "info": "Repudiandae molestia",
+      "price": "750",
+      "photo": "./assets/scss/image/product1.png",
+      "date": "5/28/2023, 8:50:08 PM",
+      "id": 11
+    },
+    {
+      "title": "Asperiores itaque ne",
+      "info": "Provident reprehend",
+      "price": "352",
+      "photo": "./assets/scss/image/product4.png",
+      "date": "5/28/2023, 8:50:17 PM",
+      "id": 12
+    }
+  ],
+  "basket": [
+    {
+      "info": "beauty",
+      "id": 2,
+      "photo": "./assets/scss/image/product2.png",
+      "title": "nur Belt Watch",
+      "price": 160
+    }
+  ]
+}

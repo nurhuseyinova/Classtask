@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.herroBanner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+header .herroBanner {
+  padding: 0 50px;
+}
+header .herroBanner nav {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .herroBanner nav .headItem1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0;
+  gap: 30px;
+}
+header .herroBanner nav .headItem1 li a {
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+}
+header .herroBanner nav .headItem1 li a:hover {
+  color: #384aeb;
+}
+header .herroBanner nav .headItem1 li a .dropdown-menu li a:hover {
+  background-color: #384aeb !important;
+}
+header .herroBanner nav .headItem1 .buyNow {
+  color: black;
+  font-weight: 500;
+  padding: 10px 40px;
+  border-radius: 80px;
+  border: 1px solid rgb(187, 184, 184);
+  transition: linear 0.5s;
+}
+header .herroBanner nav .headItem1 .buyNow:hover {
+  border-color: #384aeb;
+}
+@media only screen and (max-width: 992px) {
+  header .herroBanner nav .headItem1 {
+    display: none;
+  }
+}
+header .herroBanner nav .fa-bars {
+  color: black;
+  font-size: 20px;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  header .herroBanner nav .fa-bars {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header .herroBanner nav.show {
+    height: 70vh;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+  header .herroBanner nav.show .headItem1 {
+    padding-left: 60px;
+    display: block;
+    position: relative;
+    top: 80px;
+    right: 35%;
+  }
+  header .herroBanner nav.show .iconItem {
+    top: 40%;
+    right: 60%;
+  }
+}
+
+#home .row {
+  height: 100vh;
+  position: relative;
+}
+#home .row .col {
+  padding: 88px 0 0 0;
+}
+#home .row .col img {
+  position: absolute;
+  left: 10%;
+  width: 30%;
+  height: 85vh;
+}
+@media only screen and (max-width: 992px) {
+  #home .row .col img {
+    display: none;
+  }
+}
+#home .row .col .homeNote {
+  padding: 100px 150px 0 200px;
+}
+#home .row .col .homeNote .note1 {
+  font-size: 30px;
+  color: gray;
+}
+#home .row .col .homeNote .note2 {
+  font-size: 45px;
+  color: black;
+  font-weight: 700;
+}
+#home .row .col .homeNote .note3 {
+  font-size: 15px;
+  color: gray;
+}
+#home .row .col .homeNote a {
+  color: white;
+  background-color: #384aeb;
+  font-weight: 500;
+  padding: 10px 40px;
+  border-radius: 80px;
+  border: 1px solid rgb(187, 184, 184);
+  transition: linear 0.5s;
+}
+#home .row .col .homeNote a:hover {
+  color: black;
+  border-color: #384aeb;
+  background-color: transparent;
+}
+@media only screen and (max-width: 992px) {
+  #home .row .col .homeNote {
+    padding: 100px 50px 0 40px;
+  }
+}
+#home .row .homeCard1 {
+  background-color: #384aeb;
+}
+#home .row .homeCard2 {
+  background-color: #F1F6F7;
+}
+
+#product .herroBanner {
+  padding: 50px 100px;
+}
+#product .herroBanner p {
+  color: gray;
+}
+#product .herroBanner h3 {
+  font-weight: bold;
+}
+#product .herroBanner h3 span {
+  border-bottom: 2px solid #384aeb;
+}
+#product .herroBanner input {
+  padding: 5px;
+  width: 230px;
+}
+#product .herroBanner button {
+  border: none;
+  color: white;
+  background-color: #384aeb;
+  font-weight: 500;
+  padding: 10px 0;
+  width: 110px;
+  border-radius: 80px;
+  border: 1px solid rgb(187, 184, 184);
+  transition: linear 0.5s;
+}
+#product .herroBanner button:hover {
+  color: black;
+  border-color: #384aeb;
+  background-color: transparent;
+}
+#product .herroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: center;
+}
+#product .herroBanner .row .col {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
+}
+#product .herroBanner .row .col .product {
+  position: relative;
+  width: 220px;
+}
+#product .herroBanner .row .col .product img {
+  width: 100%;
+  max-width: 100%;
+}
+#product .herroBanner .row .col .product ul {
+  width: 100%;
+  padding: 30px 5px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: center;
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 1s linear;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateY(30px);
+}
+#product .herroBanner .row .col .product ul:hover {
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0);
+}
+#product .herroBanner .row .col .product ul li a {
+  font-size: 15px;
+  color: white;
+  background-color: #8894ff;
+  padding: 7px 12px;
+}
+#product .herroBanner .row .col .product ul li a:hover {
+  background-color: blue;
+}
+#product .herroBanner .row .col .productNote {
+  color: gray;
+  text-align: center;
+  line-height: 2vh;
+  text-transform: capitalize;
+}
+#product .herroBanner .row .col .productNote .note1 {
+  font-size: 12px;
+}
+#product .herroBanner .row .col .productNote .note2 {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+#product .herroBanner .row .col .productNote .note3 {
+  font-size: 15px;
+}
+#product .herroBanner .row .col:hover .note2 {
+  color: blue;
+}
+@media only screen and (max-width: 767px) {
+  #product .herroBanner {
+    padding: 50px 20px;
+  }
+}
+#product .productImage {
+  background-image: url("./image/parallax-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#product .productImage .herroBanner .row .col .note4 {
+  color: black;
+  font-size: 50px;
+  font-weight: 500;
+}
+#product .productImage .herroBanner .row .col .note5 {
+  color: black;
+  font-size: 30px;
+}
+#product .productImage .herroBanner .row .col .note6 {
+  font-size: 15px;
+  color: gray;
+}
+#product .productImage .herroBanner .row .col a {
+  color: white;
+  background-color: #384aeb;
+  font-weight: 500;
+  padding: 10px 40px;
+  border-radius: 80px;
+  border: 1px solid rgb(187, 184, 184);
+  transition: linear 0.5s;
+}
+#product .productImage .herroBanner .row .col a:hover {
+  color: black;
+  border-color: #384aeb;
+  background-color: transparent;
+}
+
+#news .herroBanner {
+  padding: 50px 100px;
+}
+#news .herroBanner p {
+  color: gray;
+}
+#news .herroBanner h3 {
+  font-weight: bold;
+}
+#news .herroBanner h3 span {
+  border-bottom: 2px solid #384aeb;
+}
+#news .herroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: center;
+}
+#news .herroBanner .row .col {
+  width: 330px;
+}
+#news .herroBanner .row .col img {
+  width: 100%;
+}
+#news .herroBanner .row .col .newsNote {
+  padding: 0 10px;
+}
+#news .herroBanner .row .col .newsNote .newsNote1 {
+  display: flex;
+  gap: 30px;
+  color: gray;
+}
+#news .herroBanner .row .col .newsNote .newsNote2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
+#news .herroBanner .row .col:hover .newsNote2 {
+  color: blue;
+}
+
+footer {
+  background-color: rgba(0, 35, 71, 0.980392);
+  height: 10vh;
+  padding-top: 20px;
+}
+footer .herroBanner {
+  text-align: center;
+  color: black;
+}/*# sourceMappingURL=main.css.map */

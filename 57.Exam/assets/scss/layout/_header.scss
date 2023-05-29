@@ -1,0 +1,80 @@
+header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  .herroBanner {
+    padding: 0 50px;
+    nav {
+      height: 15vh;
+      @include display;
+
+      .headItem1 {
+        @include display;
+        margin-bottom: 0;
+        gap: 30px;
+
+        li {
+          a {
+            color: black;
+            font-weight: 400;
+            font-size: 14px;
+            &:hover {
+              color: $color-blue;
+            }
+            .dropdown-menu {
+              li {
+                a {
+                  &:hover {
+                    background-color: $color-blue !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .buyNow {
+          color: black;
+          font-weight: 500;
+          padding: 10px 40px;
+          border-radius: 80px;
+          border: 1px solid rgb(187, 184, 184);
+          transition: linear 0.5s;
+          &:hover {
+            border-color: $color-blue;
+          }
+        }
+        @media only screen and (max-width: 992px) {
+          display: none;
+        }
+      }
+      .fa-bars {
+        color: black;
+        font-size: 20px;
+        display: none;
+        @media only screen and (max-width: 992px) {
+          display: block;
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        &.show {
+          height: 70vh;
+
+          align-items: flex-start;
+          padding-top: 40px;
+          .headItem1 {
+            padding-left: 60px;
+            display: block;
+            position: relative;
+            top: 80px;
+            right: 35%;
+          }
+          .iconItem {
+            top: 40%;
+            right: 60%;
+          }
+        }
+      }
+    }
+  }
+}

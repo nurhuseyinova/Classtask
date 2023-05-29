@@ -1,0 +1,43 @@
+#news {
+  .herroBanner {
+    padding: 50px 100px;
+    p {
+      color: gray;
+    }
+    h3 {
+      font-weight: bold;
+      span {
+        border-bottom: 2px solid $color-blue;
+      }
+    }
+    .row {
+      @include display;
+      justify-content: center;
+      .col {
+        width: 330px;
+        img {
+          width: 100%;
+        }
+        .newsNote {
+          padding: 0 10px;
+          .newsNote1 {
+            display: flex;
+            gap: 30px;
+            color: gray;
+          }
+          .newsNote2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: black;
+            font-family: "Oswald", sans-serif;
+          }
+        }
+        &:hover {
+          .newsNote2 {
+            color: blue;
+          }
+        }
+      }
+    }
+  }
+}

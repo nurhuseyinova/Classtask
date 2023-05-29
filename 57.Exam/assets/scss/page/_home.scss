@@ -1,0 +1,57 @@
+#home {
+  .row {
+    height: 100vh;
+    position: relative;
+    .col {
+      padding: 88px 0 0 0;
+      img {
+        position: absolute;
+        left: 10%;
+        width: 30%;
+        height: 85vh;
+        @media only screen and (max-width: 992px) {
+          display: none;
+        }
+      }
+      .homeNote {
+        padding: 100px 150px 0 200px;
+        .note1 {
+          font-size: 30px;
+          color: gray;
+        }
+        .note2 {
+          font-size: 45px;
+          color: black;
+          font-weight: 700;
+        }
+        .note3 {
+          font-size: 15px;
+          color: gray;
+        }
+        a {
+          color: white;
+          background-color: $color-blue;
+          font-weight: 500;
+          padding: 10px 40px;
+          border-radius: 80px;
+          border: 1px solid rgb(187, 184, 184);
+          transition: linear 0.5s;
+          &:hover {
+            color: black;
+            border-color: $color-blue;
+            background-color: transparent;
+          }
+        }
+        @media only screen and (max-width: 992px) {
+          padding: 100px 50px 0 40px;
+        }
+      }
+    }
+    .homeCard1 {
+      background-color: $color-blue;
+    }
+    .homeCard2 {
+      background-color: $color-whiteblue;
+    }
+  }
+}
