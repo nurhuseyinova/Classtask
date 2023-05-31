@@ -1,0 +1,76 @@
+#home {
+  background-image: url("./image/img_4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .homePage {
+    background-color: rgba(12, 12, 39, 0.7);
+
+    .herroBanner {
+      padding: 100px;
+      .row {
+        .item1 {
+          display: flex;
+          align-items: center;
+          
+          .homeNote {
+            padding-right: 100px;
+
+            h1 {
+              color: white;
+            }
+            p {
+              color: gray;
+            }
+            @media only screen and (max-width:767px) {
+                padding-right: 30px;
+                 
+             }
+          }
+        }
+        .item2 {
+       
+          height: 70vh;
+          padding: 40px;
+          
+          border-radius: 10px;
+          background-color: white;
+          form {
+            p {
+              color: black;
+              font-size: 30px;
+            }
+            input {
+              width: 300px;
+              padding: 10px;
+              border-radius: 5px;
+              border: none;
+              border: 1px solid gray;
+            }
+          }
+          @media only screen and (max-width:992px) {
+            height: 40vh;
+             
+         }
+        }
+        a{
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 14px;
+
+            color: white;
+            background-color: rgb(72, 4, 136);
+            &:hover{
+                background-color: blue;
+            }
+
+        }
+      }
+      @media only screen and (max-width:992px) {
+        padding: 130px 20px;
+         
+     }
+    }
+  }
+}

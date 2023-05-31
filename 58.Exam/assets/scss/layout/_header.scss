@@ -1,0 +1,121 @@
+header{background-color: black;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    .herroBanner{
+        padding: 0 100px;
+        nav{@include display ;
+            height: 12vh;
+            h4{
+                font-size: 20px;
+                color: white;
+                font-weight: bold
+
+            }
+            ul{margin: 0;
+                @include display ;
+                gap: 30px;
+                li{
+                    a{
+                        color: white;
+
+                    }
+                }
+                @media only screen and (max-width:992px) {
+                    display: none;
+                    
+                }
+
+            }
+            .contactUs{
+                padding: 10px 20px;
+                border-radius: 25px;
+                font-weight: 600;
+
+                color: white;
+                background-color: rgb(72, 4, 136);
+                &:hover{
+                    background-color: blue;
+                }
+                @media only screen and (max-width:992px) {
+                    display: none;
+                    
+                }
+            }
+            .fa-bars{
+                color: white;
+                font-size: 20px;
+                display: none;
+                display: none;
+                @media only screen and (max-width:992px) {
+                    display: block;
+                    
+                }
+
+            }
+
+           
+        }
+    }
+    &.change{background-color: white;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        .herroBanner{
+            padding: 0 100px;
+            nav{@include display ;
+                height: 15vh;
+                h4{
+                    font-size: 20px;
+                    color: black;
+                    font-weight: bold
+    
+                }
+                ul{margin: 0;
+                    @include display ;
+                    gap: 30px;
+                    li{
+                        a{
+                            color: black;
+    
+                        }
+                    }
+                    @media only screen and (max-width:992px) {
+                        display: none;
+                        
+                    }
+    
+                }
+                .contactUs{
+                    padding: 10px 20px;
+                    border-radius: 25px;
+                    font-weight: 600;
+    
+                    color: white;
+                    background-color: rgb(72, 4, 136);
+                    &:hover{
+                        background-color: blue;
+                    }
+                    @media only screen and (max-width:992px) {
+                        display: none;
+                        
+                    }
+                }
+                .fa-bars{
+                    color: black;
+                    font-size: 20px;
+                    display: none;
+                    display: none;
+                    @media only screen and (max-width:992px) {
+                        display: block;
+                        
+                    }
+    
+                }
+    
+               
+            }
+        }
+                
+    }
+}

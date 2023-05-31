@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "firstName": "wayn",
+      "lastName": "Huseyinov",
+      "subject": "Match",
+      "age": 29,
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.",
+      "photo": "./assets/scss/image/person_1.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "Nur",
+      "lastName": "Huseyinova",
+      "subject": "fiziks",
+      "age": 24,
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.",
+      "photo": "./assets/scss/image/person_2.jpg"
+    },
+    {
+      "id": 5,
+      "firstName": "Nur",
+      "lastName": "Huseyinova",
+      "subject": "fiziks",
+      "age": 24,
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.",
+      "photo": "./assets/scss/image/person_2.jpg"
+    },
+    {
+      "id": 6,
+      "firstName": "Nur",
+      "lastName": "Huseyinova",
+      "subject": "fiziks",
+      "age": 24,
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.",
+      "photo": "./assets/scss/image/person_2.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Jona",
+      "lastName": "Huseyinova",
+      "age": 34,
+      "subject": "informatic",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.",
+      "photo": "./assets/scss/image/person_3.jpg"
+    }
+  ],
+  "basket": [
+    {
+      "id": 3,
+      "firstName": "Jona",
+      "lastName": "Huseyinova",
+      "age": 34,
+      "subject": "informatic",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.",
+      "photo": "./assets/scss/image/person_3.jpg"
+    }
+  ]
+}

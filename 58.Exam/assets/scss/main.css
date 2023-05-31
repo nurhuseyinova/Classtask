@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.herroBanner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+header .herroBanner {
+  padding: 0 100px;
+}
+header .herroBanner nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12vh;
+}
+header .herroBanner nav h4 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+header .herroBanner nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+header .herroBanner nav ul li a {
+  color: white;
+}
+@media only screen and (max-width: 992px) {
+  header .herroBanner nav ul {
+    display: none;
+  }
+}
+header .herroBanner nav .contactUs {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(72, 4, 136);
+}
+header .herroBanner nav .contactUs:hover {
+  background-color: blue;
+}
+@media only screen and (max-width: 992px) {
+  header .herroBanner nav .contactUs {
+    display: none;
+  }
+}
+header .herroBanner nav .fa-bars {
+  color: white;
+  font-size: 20px;
+  display: none;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  header .herroBanner nav .fa-bars {
+    display: block;
+  }
+}
+header.change {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+header.change .herroBanner {
+  padding: 0 100px;
+}
+header.change .herroBanner nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+header.change .herroBanner nav h4 {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+header.change .herroBanner nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+header.change .herroBanner nav ul li a {
+  color: black;
+}
+@media only screen and (max-width: 992px) {
+  header.change .herroBanner nav ul {
+    display: none;
+  }
+}
+header.change .herroBanner nav .contactUs {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(72, 4, 136);
+}
+header.change .herroBanner nav .contactUs:hover {
+  background-color: blue;
+}
+@media only screen and (max-width: 992px) {
+  header.change .herroBanner nav .contactUs {
+    display: none;
+  }
+}
+header.change .herroBanner nav .fa-bars {
+  color: black;
+  font-size: 20px;
+  display: none;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  header.change .herroBanner nav .fa-bars {
+    display: block;
+  }
+}
+
+#home {
+  background-image: url("./image/img_4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home .homePage {
+  background-color: rgba(12, 12, 39, 0.7);
+}
+#home .homePage .herroBanner {
+  padding: 100px;
+}
+#home .homePage .herroBanner .row .item1 {
+  display: flex;
+  align-items: center;
+}
+#home .homePage .herroBanner .row .item1 .homeNote {
+  padding-right: 100px;
+}
+#home .homePage .herroBanner .row .item1 .homeNote h1 {
+  color: white;
+}
+#home .homePage .herroBanner .row .item1 .homeNote p {
+  color: gray;
+}
+@media only screen and (max-width: 767px) {
+  #home .homePage .herroBanner .row .item1 .homeNote {
+    padding-right: 30px;
+  }
+}
+#home .homePage .herroBanner .row .item2 {
+  height: 70vh;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: white;
+}
+#home .homePage .herroBanner .row .item2 form p {
+  color: black;
+  font-size: 30px;
+}
+#home .homePage .herroBanner .row .item2 form input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid gray;
+}
+@media only screen and (max-width: 992px) {
+  #home .homePage .herroBanner .row .item2 {
+    height: 40vh;
+  }
+}
+#home .homePage .herroBanner .row a {
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  background-color: rgb(72, 4, 136);
+}
+#home .homePage .herroBanner .row a:hover {
+  background-color: blue;
+}
+@media only screen and (max-width: 992px) {
+  #home .homePage .herroBanner {
+    padding: 130px 20px;
+  }
+}
+
+#programs .herroBanner {
+  padding: 50px 100px;
+}
+#programs .herroBanner .programsNote {
+  padding: 0 200px;
+  text-align: center;
+}
+#programs .herroBanner .programsNote h1 {
+  font-weight: bold;
+}
+#programs .herroBanner .programsNote p {
+  color: gray;
+}
+@media only screen and (max-width: 992px) {
+  #programs .herroBanner .programsNote {
+    padding: 0 50px;
+  }
+}
+#programs .herroBanner .programsCard1 {
+  padding: 50px 0;
+}
+#programs .herroBanner .programsCard1 .col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+#programs .herroBanner .programsCard1 .col img {
+  width: 100%;
+}
+#programs .herroBanner .programsCard1 .col .cardNote .note1 {
+  font-size: 30px;
+  color: black;
+}
+#programs .herroBanner .programsCard1 .col .cardNote .note2 {
+  color: gray;
+}
+#programs .herroBanner .programsCard1 .col .cardNote .note3 {
+  display: flex;
+  gap: 20px;
+  color: rgb(120, 27, 207);
+}
+#programs .herroBanner .programsCard1 .col .cardNote .note3 i {
+  background-color: rgb(120, 27, 207);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 992px) {
+  #programs .herroBanner {
+    padding: 50px 20px;
+  }
+}
+
+#teachers .herroBanner {
+  padding: 50px 120px;
+}
+#teachers .herroBanner .teachersNote {
+  padding: 0 200px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+#teachers .herroBanner .teachersNote h1 {
+  font-weight: bold;
+}
+#teachers .herroBanner .teachersNote p {
+  color: gray;
+}
+#teachers .herroBanner .teachersNote input {
+  width: 200px;
+  padding: 5px 0;
+}
+#teachers .herroBanner .teachersNote button {
+  background-color: rgb(60, 11, 105);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 0;
+  width: 100px;
+}
+#teachers .herroBanner .teachersNote button:hover {
+  background-color: blue;
+}
+@media only screen and (max-width: 992px) {
+  #teachers .herroBanner .teachersNote {
+    padding: 0 50px;
+  }
+}
+#teachers .herroBanner .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+#teachers .herroBanner .row .col .teacherItem {
+  position: relative;
+}
+#teachers .herroBanner .row .col .teacherItem img {
+  position: absolute;
+  top: -20%;
+  left: 25%;
+  border-radius: 50%;
+  width: 50%;
+}
+#teachers .herroBanner .row .col .teacherItem .itemNote {
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  border: 1px solid gray;
+}
+#teachers .herroBanner .row .col .teacherItem .itemNote .item1 {
+  color: black;
+  font-size: 20px;
+}
+#teachers .herroBanner .row .col .teacherItem .itemNote .item2 {
+  color: rgb(167, 166, 166);
+  font-size: 17px;
+}
+#teachers .herroBanner .row .col .teacherItem .itemNote .item3 {
+  color: gray;
+  font-size: 17px;
+}
+#teachers .herroBanner .row .col .teacherItem .itemNote .edit {
+  border: none;
+  background-color: transparent;
+  color: darkgreen;
+}
+#teachers .herroBanner .row .col .teacherItem .itemNote .basket {
+  border: none;
+  color: blue;
+  background-color: transparent;
+}
+#teachers .herroBanner .row .col .teacherItem .itemNote .delete {
+  border: none;
+  color: red;
+  background-color: transparent;
+}
+#teachers .herroBanner .row .col .teacherItem .itemNote .detail {
+  color: darkviolet;
+}
+@media only screen and (max-width: 992px) {
+  #teachers .herroBanner {
+    padding: 50px 20px;
+  }
+}
+
+footer {
+  background-color: rgb(43, 2, 82);
+  padding: 15px;
+}
+footer .herroBanner {
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
